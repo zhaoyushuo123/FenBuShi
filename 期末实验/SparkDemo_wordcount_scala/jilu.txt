@@ -1,0 +1,986 @@
+D:\DM\javas\java\.jdks\jdk1.8.0_281\bin\java.exe -javaagent:D:\DM\jetbrains\IDEA\lib\idea_rt.jar=5261:D:\DM\jetbrains\IDEA\bin -Dfile.encoding=UTF-8 -classpath D:\DM\javas\java\.jdks\jdk1.8.0_281\jre\lib\charsets.jar;D:\DM\javas\java\.jdks\jdk1.8.0_281\jre\lib\deploy.jar;D:\DM\javas\java\.jdks\jdk1.8.0_281\jre\lib\ext\access-bridge-64.jar;D:\DM\javas\java\.jdks\jdk1.8.0_281\jre\lib\ext\cldrdata.jar;D:\DM\javas\java\.jdks\jdk1.8.0_281\jre\lib\ext\dnsns.jar;D:\DM\javas\java\.jdks\jdk1.8.0_281\jre\lib\ext\jaccess.jar;D:\DM\javas\java\.jdks\jdk1.8.0_281\jre\lib\ext\jfxrt.jar;D:\DM\javas\java\.jdks\jdk1.8.0_281\jre\lib\ext\localedata.jar;D:\DM\javas\java\.jdks\jdk1.8.0_281\jre\lib\ext\nashorn.jar;D:\DM\javas\java\.jdks\jdk1.8.0_281\jre\lib\ext\sunec.jar;D:\DM\javas\java\.jdks\jdk1.8.0_281\jre\lib\ext\sunjce_provider.jar;D:\DM\javas\java\.jdks\jdk1.8.0_281\jre\lib\ext\sunmscapi.jar;D:\DM\javas\java\.jdks\jdk1.8.0_281\jre\lib\ext\sunpkcs11.jar;D:\DM\javas\java\.jdks\jdk1.8.0_281\jre\lib\ext\zipfs.jar;D:\DM\javas\java\.jdks\jdk1.8.0_281\jre\lib\javaws.jar;D:\DM\javas\java\.jdks\jdk1.8.0_281\jre\lib\jce.jar;D:\DM\javas\java\.jdks\jdk1.8.0_281\jre\lib\jfr.jar;D:\DM\javas\java\.jdks\jdk1.8.0_281\jre\lib\jfxswt.jar;D:\DM\javas\java\.jdks\jdk1.8.0_281\jre\lib\jsse.jar;D:\DM\javas\java\.jdks\jdk1.8.0_281\jre\lib\management-agent.jar;D:\DM\javas\java\.jdks\jdk1.8.0_281\jre\lib\plugin.jar;D:\DM\javas\java\.jdks\jdk1.8.0_281\jre\lib\resources.jar;D:\DM\javas\java\.jdks\jdk1.8.0_281\jre\lib\rt.jar;E:\Daima\java\IDEA\pagerank\SparkDemo_wordcount_scala\target\classes;C:\Users\15151\.m2\repository\org\apache\spark\spark-core_2.11\2.4.7\spark-core_2.11-2.4.7.jar;C:\Users\15151\.m2\repository\com\thoughtworks\paranamer\paranamer\2.8\paranamer-2.8.jar;C:\Users\15151\.m2\repository\org\apache\avro\avro\1.8.2\avro-1.8.2.jar;C:\Users\15151\.m2\repository\org\codehaus\jackson\jackson-core-asl\1.9.13\jackson-core-asl-1.9.13.jar;C:\Users\15151\.m2\repository\org\codehaus\jackson\jackson-mapper-asl\1.9.13\jackson-mapper-asl-1.9.13.jar;C:\Users\15151\.m2\repository\org\apache\commons\commons-compress\1.8.1\commons-compress-1.8.1.jar;C:\Users\15151\.m2\repository\org\tukaani\xz\1.5\xz-1.5.jar;C:\Users\15151\.m2\repository\org\apache\avro\avro-mapred\1.8.2\avro-mapred-1.8.2-hadoop2.jar;C:\Users\15151\.m2\repository\org\apache\avro\avro-ipc\1.8.2\avro-ipc-1.8.2.jar;C:\Users\15151\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;C:\Users\15151\.m2\repository\com\twitter\chill_2.11\0.9.3\chill_2.11-0.9.3.jar;C:\Users\15151\.m2\repository\com\esotericsoftware\kryo-shaded\4.0.2\kryo-shaded-4.0.2.jar;C:\Users\15151\.m2\repository\com\esotericsoftware\minlog\1.3.0\minlog-1.3.0.jar;C:\Users\15151\.m2\repository\org\objenesis\objenesis\2.5.1\objenesis-2.5.1.jar;C:\Users\15151\.m2\repository\com\twitter\chill-java\0.9.3\chill-java-0.9.3.jar;C:\Users\15151\.m2\repository\org\apache\xbean\xbean-asm6-shaded\4.8\xbean-asm6-shaded-4.8.jar;C:\Users\15151\.m2\repository\org\apache\hadoop\hadoop-client\2.6.5\hadoop-client-2.6.5.jar;C:\Users\15151\.m2\repository\org\apache\hadoop\hadoop-common\2.6.5\hadoop-common-2.6.5.jar;C:\Users\15151\.m2\repository\commons-cli\commons-cli\1.2\commons-cli-1.2.jar;C:\Users\15151\.m2\repository\xmlenc\xmlenc\0.52\xmlenc-0.52.jar;C:\Users\15151\.m2\repository\commons-httpclient\commons-httpclient\3.1\commons-httpclient-3.1.jar;C:\Users\15151\.m2\repository\commons-io\commons-io\2.4\commons-io-2.4.jar;C:\Users\15151\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\15151\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\15151\.m2\repository\commons-configuration\commons-configuration\1.6\commons-configuration-1.6.jar;C:\Users\15151\.m2\repository\commons-digester\commons-digester\1.8\commons-digester-1.8.jar;C:\Users\15151\.m2\repository\commons-beanutils\commons-beanutils\1.7.0\commons-beanutils-1.7.0.jar;C:\Users\15151\.m2\repository\com\google\protobuf\protobuf-java\2.5.0\protobuf-java-2.5.0.jar;C:\Users\15151\.m2\repository\com\google\code\gson\gson\2.2.4\gson-2.2.4.jar;C:\Users\15151\.m2\repository\org\apache\hadoop\hadoop-auth\2.6.5\hadoop-auth-2.6.5.jar;C:\Users\15151\.m2\repository\org\apache\httpcomponents\httpclient\4.2.5\httpclient-4.2.5.jar;C:\Users\15151\.m2\repository\org\apache\httpcomponents\httpcore\4.2.4\httpcore-4.2.4.jar;C:\Users\15151\.m2\repository\org\apache\directory\server\apacheds-kerberos-codec\2.0.0-M15\apacheds-kerberos-codec-2.0.0-M15.jar;C:\Users\15151\.m2\repository\org\apache\directory\server\apacheds-i18n\2.0.0-M15\apacheds-i18n-2.0.0-M15.jar;C:\Users\15151\.m2\repository\org\apache\directory\api\api-asn1-api\1.0.0-M20\api-asn1-api-1.0.0-M20.jar;C:\Users\15151\.m2\repository\org\apache\directory\api\api-util\1.0.0-M20\api-util-1.0.0-M20.jar;C:\Users\15151\.m2\repository\org\apache\curator\curator-client\2.6.0\curator-client-2.6.0.jar;C:\Users\15151\.m2\repository\org\htrace\htrace-core\3.0.4\htrace-core-3.0.4.jar;C:\Users\15151\.m2\repository\org\apache\hadoop\hadoop-hdfs\2.6.5\hadoop-hdfs-2.6.5.jar;C:\Users\15151\.m2\repository\org\mortbay\jetty\jetty-util\6.1.26\jetty-util-6.1.26.jar;C:\Users\15151\.m2\repository\xerces\xercesImpl\2.9.1\xercesImpl-2.9.1.jar;C:\Users\15151\.m2\repository\xml-apis\xml-apis\1.3.04\xml-apis-1.3.04.jar;C:\Users\15151\.m2\repository\org\apache\hadoop\hadoop-mapreduce-client-app\2.6.5\hadoop-mapreduce-client-app-2.6.5.jar;C:\Users\15151\.m2\repository\org\apache\hadoop\hadoop-mapreduce-client-common\2.6.5\hadoop-mapreduce-client-common-2.6.5.jar;C:\Users\15151\.m2\repository\org\apache\hadoop\hadoop-yarn-client\2.6.5\hadoop-yarn-client-2.6.5.jar;C:\Users\15151\.m2\repository\org\apache\hadoop\hadoop-yarn-server-common\2.6.5\hadoop-yarn-server-common-2.6.5.jar;C:\Users\15151\.m2\repository\org\apache\hadoop\hadoop-mapreduce-client-shuffle\2.6.5\hadoop-mapreduce-client-shuffle-2.6.5.jar;C:\Users\15151\.m2\repository\org\apache\hadoop\hadoop-yarn-api\2.6.5\hadoop-yarn-api-2.6.5.jar;C:\Users\15151\.m2\repository\org\apache\hadoop\hadoop-mapreduce-client-core\2.6.5\hadoop-mapreduce-client-core-2.6.5.jar;C:\Users\15151\.m2\repository\org\apache\hadoop\hadoop-yarn-common\2.6.5\hadoop-yarn-common-2.6.5.jar;C:\Users\15151\.m2\repository\javax\xml\bind\jaxb-api\2.2.2\jaxb-api-2.2.2.jar;C:\Users\15151\.m2\repository\javax\xml\stream\stax-api\1.0-2\stax-api-1.0-2.jar;C:\Users\15151\.m2\repository\org\codehaus\jackson\jackson-jaxrs\1.9.13\jackson-jaxrs-1.9.13.jar;C:\Users\15151\.m2\repository\org\codehaus\jackson\jackson-xc\1.9.13\jackson-xc-1.9.13.jar;C:\Users\15151\.m2\repository\org\apache\hadoop\hadoop-mapreduce-client-jobclient\2.6.5\hadoop-mapreduce-client-jobclient-2.6.5.jar;C:\Users\15151\.m2\repository\org\apache\hadoop\hadoop-annotations\2.6.5\hadoop-annotations-2.6.5.jar;C:\Users\15151\.m2\repository\org\apache\spark\spark-launcher_2.11\2.4.7\spark-launcher_2.11-2.4.7.jar;C:\Users\15151\.m2\repository\org\apache\spark\spark-kvstore_2.11\2.4.7\spark-kvstore_2.11-2.4.7.jar;C:\Users\15151\.m2\repository\org\fusesource\leveldbjni\leveldbjni-all\1.8\leveldbjni-all-1.8.jar;C:\Users\15151\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.6.7\jackson-core-2.6.7.jar;C:\Users\15151\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.6.7\jackson-annotations-2.6.7.jar;C:\Users\15151\.m2\repository\org\apache\spark\spark-network-common_2.11\2.4.7\spark-network-common_2.11-2.4.7.jar;C:\Users\15151\.m2\repository\org\apache\spark\spark-network-shuffle_2.11\2.4.7\spark-network-shuffle_2.11-2.4.7.jar;C:\Users\15151\.m2\repository\org\apache\spark\spark-unsafe_2.11\2.4.7\spark-unsafe_2.11-2.4.7.jar;C:\Users\15151\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar;C:\Users\15151\.m2\repository\org\apache\curator\curator-recipes\2.6.0\curator-recipes-2.6.0.jar;C:\Users\15151\.m2\repository\org\apache\curator\curator-framework\2.6.0\curator-framework-2.6.0.jar;C:\Users\15151\.m2\repository\com\google\guava\guava\16.0.1\guava-16.0.1.jar;C:\Users\15151\.m2\repository\org\apache\zookeeper\zookeeper\3.4.6\zookeeper-3.4.6.jar;C:\Users\15151\.m2\repository\javax\servlet\javax.servlet-api\3.1.0\javax.servlet-api-3.1.0.jar;C:\Users\15151\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\15151\.m2\repository\org\apache\commons\commons-math3\3.4.1\commons-math3-3.4.1.jar;C:\Users\15151\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\15151\.m2\repository\org\slf4j\slf4j-api\1.7.16\slf4j-api-1.7.16.jar;C:\Users\15151\.m2\repository\org\slf4j\jul-to-slf4j\1.7.16\jul-to-slf4j-1.7.16.jar;C:\Users\15151\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.16\jcl-over-slf4j-1.7.16.jar;C:\Users\15151\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\15151\.m2\repository\org\slf4j\slf4j-log4j12\1.7.16\slf4j-log4j12-1.7.16.jar;C:\Users\15151\.m2\repository\com\ning\compress-lzf\1.0.3\compress-lzf-1.0.3.jar;C:\Users\15151\.m2\repository\org\xerial\snappy\snappy-java\1.1.7.5\snappy-java-1.1.7.5.jar;C:\Users\15151\.m2\repository\org\lz4\lz4-java\1.4.0\lz4-java-1.4.0.jar;C:\Users\15151\.m2\repository\com\github\luben\zstd-jni\1.3.2-2\zstd-jni-1.3.2-2.jar;C:\Users\15151\.m2\repository\org\roaringbitmap\RoaringBitmap\0.7.45\RoaringBitmap-0.7.45.jar;C:\Users\15151\.m2\repository\org\roaringbitmap\shims\0.7.45\shims-0.7.45.jar;C:\Users\15151\.m2\repository\commons-net\commons-net\3.1\commons-net-3.1.jar;C:\Users\15151\.m2\repository\org\scala-lang\scala-library\2.11.12\scala-library-2.11.12.jar;C:\Users\15151\.m2\repository\org\json4s\json4s-jackson_2.11\3.5.3\json4s-jackson_2.11-3.5.3.jar;C:\Users\15151\.m2\repository\org\json4s\json4s-core_2.11\3.5.3\json4s-core_2.11-3.5.3.jar;C:\Users\15151\.m2\repository\org\json4s\json4s-ast_2.11\3.5.3\json4s-ast_2.11-3.5.3.jar;C:\Users\15151\.m2\repository\org\json4s\json4s-scalap_2.11\3.5.3\json4s-scalap_2.11-3.5.3.jar;C:\Users\15151\.m2\repository\org\scala-lang\modules\scala-xml_2.11\1.0.6\scala-xml_2.11-1.0.6.jar;C:\Users\15151\.m2\repository\org\glassfish\jersey\core\jersey-client\2.22.2\jersey-client-2.22.2.jar;C:\Users\15151\.m2\repository\javax\ws\rs\javax.ws.rs-api\2.0.1\javax.ws.rs-api-2.0.1.jar;C:\Users\15151\.m2\repository\org\glassfish\hk2\hk2-api\2.4.0-b34\hk2-api-2.4.0-b34.jar;C:\Users\15151\.m2\repository\org\glassfish\hk2\hk2-utils\2.4.0-b34\hk2-utils-2.4.0-b34.jar;C:\Users\15151\.m2\repository\org\glassfish\hk2\external\aopalliance-repackaged\2.4.0-b34\aopalliance-repackaged-2.4.0-b34.jar;C:\Users\15151\.m2\repository\org\glassfish\hk2\external\javax.inject\2.4.0-b34\javax.inject-2.4.0-b34.jar;C:\Users\15151\.m2\repository\org\glassfish\hk2\hk2-locator\2.4.0-b34\hk2-locator-2.4.0-b34.jar;C:\Users\15151\.m2\repository\org\javassist\javassist\3.18.1-GA\javassist-3.18.1-GA.jar;C:\Users\15151\.m2\repository\org\glassfish\jersey\core\jersey-common\2.22.2\jersey-common-2.22.2.jar;C:\Users\15151\.m2\repository\javax\annotation\javax.annotation-api\1.2\javax.annotation-api-1.2.jar;C:\Users\15151\.m2\repository\org\glassfish\jersey\bundles\repackaged\jersey-guava\2.22.2\jersey-guava-2.22.2.jar;C:\Users\15151\.m2\repository\org\glassfish\hk2\osgi-resource-locator\1.0.1\osgi-resource-locator-1.0.1.jar;C:\Users\15151\.m2\repository\org\glassfish\jersey\core\jersey-server\2.22.2\jersey-server-2.22.2.jar;C:\Users\15151\.m2\repository\org\glassfish\jersey\media\jersey-media-jaxb\2.22.2\jersey-media-jaxb-2.22.2.jar;C:\Users\15151\.m2\repository\javax\validation\validation-api\1.1.0.Final\validation-api-1.1.0.Final.jar;C:\Users\15151\.m2\repository\org\glassfish\jersey\containers\jersey-container-servlet\2.22.2\jersey-container-servlet-2.22.2.jar;C:\Users\15151\.m2\repository\org\glassfish\jersey\containers\jersey-container-servlet-core\2.22.2\jersey-container-servlet-core-2.22.2.jar;C:\Users\15151\.m2\repository\io\netty\netty-all\4.1.47.Final\netty-all-4.1.47.Final.jar;C:\Users\15151\.m2\repository\io\netty\netty\3.9.9.Final\netty-3.9.9.Final.jar;C:\Users\15151\.m2\repository\com\clearspring\analytics\stream\2.7.0\stream-2.7.0.jar;C:\Users\15151\.m2\repository\io\dropwizard\metrics\metrics-core\3.1.5\metrics-core-3.1.5.jar;C:\Users\15151\.m2\repository\io\dropwizard\metrics\metrics-jvm\3.1.5\metrics-jvm-3.1.5.jar;C:\Users\15151\.m2\repository\io\dropwizard\metrics\metrics-json\3.1.5\metrics-json-3.1.5.jar;C:\Users\15151\.m2\repository\io\dropwizard\metrics\metrics-graphite\3.1.5\metrics-graphite-3.1.5.jar;C:\Users\15151\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.6.7.3\jackson-databind-2.6.7.3.jar;C:\Users\15151\.m2\repository\com\fasterxml\jackson\module\jackson-module-scala_2.11\2.6.7.1\jackson-module-scala_2.11-2.6.7.1.jar;C:\Users\15151\.m2\repository\org\scala-lang\scala-reflect\2.11.8\scala-reflect-2.11.8.jar;C:\Users\15151\.m2\repository\com\fasterxml\jackson\module\jackson-module-paranamer\2.7.9\jackson-module-paranamer-2.7.9.jar;C:\Users\15151\.m2\repository\org\apache\ivy\ivy\2.4.0\ivy-2.4.0.jar;C:\Users\15151\.m2\repository\oro\oro\2.0.8\oro-2.0.8.jar;C:\Users\15151\.m2\repository\net\razorvine\pyrolite\4.13\pyrolite-4.13.jar;C:\Users\15151\.m2\repository\net\sf\py4j\py4j\0.10.7\py4j-0.10.7.jar;C:\Users\15151\.m2\repository\org\apache\spark\spark-tags_2.11\2.4.7\spark-tags_2.11-2.4.7.jar;C:\Users\15151\.m2\repository\org\apache\commons\commons-crypto\1.0.0\commons-crypto-1.0.0.jar;C:\Users\15151\.m2\repository\org\spark-project\spark\unused\1.0.0\unused-1.0.0.jar;C:\Users\15151\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.12.jar;C:\Users\15151\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.12.jar;C:\Users\15151\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.5.jar;C:\Users\15151\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.4.jar cn.edu.ecnu.spark.example.scala.wordcount.WordCount ./input/pd.train ./output
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+22/06/26 09:45:00 INFO SparkContext: Running Spark version 2.4.7
+22/06/26 09:45:00 INFO SparkContext: Submitted application: WordCount
+22/06/26 09:45:01 INFO SecurityManager: Changing view acls to: 15151
+22/06/26 09:45:01 INFO SecurityManager: Changing modify acls to: 15151
+22/06/26 09:45:01 INFO SecurityManager: Changing view acls groups to: 
+22/06/26 09:45:01 INFO SecurityManager: Changing modify acls groups to: 
+22/06/26 09:45:01 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(15151); groups with view permissions: Set(); users  with modify permissions: Set(15151); groups with modify permissions: Set()
+22/06/26 09:45:03 INFO Utils: Successfully started service 'sparkDriver' on port 5281.
+22/06/26 09:45:03 INFO SparkEnv: Registering MapOutputTracker
+22/06/26 09:45:03 INFO SparkEnv: Registering BlockManagerMaster
+22/06/26 09:45:03 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+22/06/26 09:45:03 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+22/06/26 09:45:03 INFO DiskBlockManager: Created local directory at C:\Users\15151\AppData\Local\Temp\blockmgr-1f3c55ef-6cbf-4693-8fd0-6d3777b671d0
+22/06/26 09:45:03 INFO MemoryStore: MemoryStore started with capacity 888.9 MB
+22/06/26 09:45:03 INFO SparkEnv: Registering OutputCommitCoordinator
+22/06/26 09:45:03 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+22/06/26 09:45:03 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://192.168.101.23:4040
+22/06/26 09:45:03 INFO Executor: Starting executor ID driver on host localhost
+22/06/26 09:45:03 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 5296.
+22/06/26 09:45:03 INFO NettyBlockTransferService: Server created on 192.168.101.23:5296
+22/06/26 09:45:03 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+22/06/26 09:45:04 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 192.168.101.23, 5296, None)
+22/06/26 09:45:04 INFO BlockManagerMasterEndpoint: Registering block manager 192.168.101.23:5296 with 888.9 MB RAM, BlockManagerId(driver, 192.168.101.23, 5296, None)
+22/06/26 09:45:04 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 192.168.101.23, 5296, None)
+22/06/26 09:45:04 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 192.168.101.23, 5296, None)
+22/06/26 09:45:04 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 214.6 KB, free 888.7 MB)
+22/06/26 09:45:04 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 20.4 KB, free 888.7 MB)
+22/06/26 09:45:04 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 192.168.101.23:5296 (size: 20.4 KB, free: 888.9 MB)
+22/06/26 09:45:04 INFO SparkContext: Created broadcast 0 from textFile at WordCount.scala:16
+22/06/26 09:45:04 INFO FileInputFormat: Total input paths to process : 1
+22/06/26 09:45:04 INFO deprecation: mapred.output.dir is deprecated. Instead, use mapreduce.output.fileoutputformat.outputdir
+22/06/26 09:45:04 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:45:04 INFO SparkContext: Starting job: runJob at SparkHadoopWriter.scala:78
+22/06/26 09:45:04 INFO DAGScheduler: Registering RDD 3 (map at WordCount.scala:20) as input to shuffle 0
+22/06/26 09:45:04 INFO DAGScheduler: Got job 0 (runJob at SparkHadoopWriter.scala:78) with 65 output partitions
+22/06/26 09:45:04 INFO DAGScheduler: Final stage: ResultStage 1 (runJob at SparkHadoopWriter.scala:78)
+22/06/26 09:45:04 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 0)
+22/06/26 09:45:04 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 0)
+22/06/26 09:45:04 INFO DAGScheduler: Submitting ShuffleMapStage 0 (MapPartitionsRDD[3] at map at WordCount.scala:20), which has no missing parents
+22/06/26 09:45:04 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 6.0 KB, free 888.7 MB)
+22/06/26 09:45:04 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 3.3 KB, free 888.7 MB)
+22/06/26 09:45:04 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 192.168.101.23:5296 (size: 3.3 KB, free: 888.9 MB)
+22/06/26 09:45:04 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1184
+22/06/26 09:45:04 INFO DAGScheduler: Submitting 65 missing tasks from ShuffleMapStage 0 (MapPartitionsRDD[3] at map at WordCount.scala:20) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14))
+22/06/26 09:45:04 INFO TaskSchedulerImpl: Adding task set 0.0 with 65 tasks
+22/06/26 09:45:04 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0, localhost, executor driver, partition 0, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:45:04 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+22/06/26 09:45:04 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:0+33554432
+22/06/26 09:45:07 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 1090 bytes result sent to driver
+22/06/26 09:45:07 INFO TaskSetManager: Starting task 1.0 in stage 0.0 (TID 1, localhost, executor driver, partition 1, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:45:07 INFO Executor: Running task 1.0 in stage 0.0 (TID 1)
+22/06/26 09:45:07 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:33554432+33554432
+22/06/26 09:45:07 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 2660 ms on localhost (executor driver) (1/65)
+22/06/26 09:45:09 INFO Executor: Finished task 1.0 in stage 0.0 (TID 1). 1047 bytes result sent to driver
+22/06/26 09:45:09 INFO TaskSetManager: Starting task 2.0 in stage 0.0 (TID 2, localhost, executor driver, partition 2, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:45:09 INFO Executor: Running task 2.0 in stage 0.0 (TID 2)
+22/06/26 09:45:09 INFO TaskSetManager: Finished task 1.0 in stage 0.0 (TID 1) in 2257 ms on localhost (executor driver) (2/65)
+22/06/26 09:45:09 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:67108864+33554432
+22/06/26 09:45:12 INFO Executor: Finished task 2.0 in stage 0.0 (TID 2). 1090 bytes result sent to driver
+22/06/26 09:45:12 INFO TaskSetManager: Starting task 3.0 in stage 0.0 (TID 3, localhost, executor driver, partition 3, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:45:12 INFO Executor: Running task 3.0 in stage 0.0 (TID 3)
+22/06/26 09:45:12 INFO TaskSetManager: Finished task 2.0 in stage 0.0 (TID 2) in 2419 ms on localhost (executor driver) (3/65)
+22/06/26 09:45:12 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:100663296+33554432
+22/06/26 09:45:14 INFO Executor: Finished task 3.0 in stage 0.0 (TID 3). 1047 bytes result sent to driver
+22/06/26 09:45:14 INFO TaskSetManager: Starting task 4.0 in stage 0.0 (TID 4, localhost, executor driver, partition 4, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:45:14 INFO Executor: Running task 4.0 in stage 0.0 (TID 4)
+22/06/26 09:45:14 INFO TaskSetManager: Finished task 3.0 in stage 0.0 (TID 3) in 2189 ms on localhost (executor driver) (4/65)
+22/06/26 09:45:14 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:134217728+33554432
+22/06/26 09:45:16 INFO Executor: Finished task 4.0 in stage 0.0 (TID 4). 1047 bytes result sent to driver
+22/06/26 09:45:16 INFO TaskSetManager: Starting task 5.0 in stage 0.0 (TID 5, localhost, executor driver, partition 5, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:45:16 INFO Executor: Running task 5.0 in stage 0.0 (TID 5)
+22/06/26 09:45:16 INFO TaskSetManager: Finished task 4.0 in stage 0.0 (TID 4) in 2125 ms on localhost (executor driver) (5/65)
+22/06/26 09:45:16 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:167772160+33554432
+22/06/26 09:45:18 INFO Executor: Finished task 5.0 in stage 0.0 (TID 5). 1047 bytes result sent to driver
+22/06/26 09:45:18 INFO TaskSetManager: Starting task 6.0 in stage 0.0 (TID 6, localhost, executor driver, partition 6, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:45:18 INFO Executor: Running task 6.0 in stage 0.0 (TID 6)
+22/06/26 09:45:18 INFO TaskSetManager: Finished task 5.0 in stage 0.0 (TID 5) in 2172 ms on localhost (executor driver) (6/65)
+22/06/26 09:45:18 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:201326592+33554432
+22/06/26 09:45:20 INFO Executor: Finished task 6.0 in stage 0.0 (TID 6). 1047 bytes result sent to driver
+22/06/26 09:45:20 INFO TaskSetManager: Starting task 7.0 in stage 0.0 (TID 7, localhost, executor driver, partition 7, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:45:20 INFO Executor: Running task 7.0 in stage 0.0 (TID 7)
+22/06/26 09:45:20 INFO TaskSetManager: Finished task 6.0 in stage 0.0 (TID 6) in 2098 ms on localhost (executor driver) (7/65)
+22/06/26 09:45:20 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:234881024+33554432
+22/06/26 09:45:22 INFO Executor: Finished task 7.0 in stage 0.0 (TID 7). 1047 bytes result sent to driver
+22/06/26 09:45:22 INFO TaskSetManager: Starting task 8.0 in stage 0.0 (TID 8, localhost, executor driver, partition 8, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:45:22 INFO Executor: Running task 8.0 in stage 0.0 (TID 8)
+22/06/26 09:45:22 INFO TaskSetManager: Finished task 7.0 in stage 0.0 (TID 7) in 2082 ms on localhost (executor driver) (8/65)
+22/06/26 09:45:22 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:268435456+33554432
+22/06/26 09:45:25 INFO Executor: Finished task 8.0 in stage 0.0 (TID 8). 1004 bytes result sent to driver
+22/06/26 09:45:25 INFO TaskSetManager: Starting task 9.0 in stage 0.0 (TID 9, localhost, executor driver, partition 9, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:45:25 INFO Executor: Running task 9.0 in stage 0.0 (TID 9)
+22/06/26 09:45:25 INFO TaskSetManager: Finished task 8.0 in stage 0.0 (TID 8) in 2120 ms on localhost (executor driver) (9/65)
+22/06/26 09:45:25 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:301989888+33554432
+22/06/26 09:45:27 INFO Executor: Finished task 9.0 in stage 0.0 (TID 9). 1047 bytes result sent to driver
+22/06/26 09:45:27 INFO TaskSetManager: Starting task 10.0 in stage 0.0 (TID 10, localhost, executor driver, partition 10, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:45:27 INFO Executor: Running task 10.0 in stage 0.0 (TID 10)
+22/06/26 09:45:27 INFO TaskSetManager: Finished task 9.0 in stage 0.0 (TID 9) in 2221 ms on localhost (executor driver) (10/65)
+22/06/26 09:45:27 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:335544320+33554432
+22/06/26 09:45:29 INFO Executor: Finished task 10.0 in stage 0.0 (TID 10). 1047 bytes result sent to driver
+22/06/26 09:45:29 INFO TaskSetManager: Starting task 11.0 in stage 0.0 (TID 11, localhost, executor driver, partition 11, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:45:29 INFO Executor: Running task 11.0 in stage 0.0 (TID 11)
+22/06/26 09:45:29 INFO TaskSetManager: Finished task 10.0 in stage 0.0 (TID 10) in 2075 ms on localhost (executor driver) (11/65)
+22/06/26 09:45:29 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:369098752+33554432
+22/06/26 09:45:31 INFO Executor: Finished task 11.0 in stage 0.0 (TID 11). 1047 bytes result sent to driver
+22/06/26 09:45:31 INFO TaskSetManager: Starting task 12.0 in stage 0.0 (TID 12, localhost, executor driver, partition 12, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:45:31 INFO Executor: Running task 12.0 in stage 0.0 (TID 12)
+22/06/26 09:45:31 INFO TaskSetManager: Finished task 11.0 in stage 0.0 (TID 11) in 2110 ms on localhost (executor driver) (12/65)
+22/06/26 09:45:31 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:402653184+33554432
+22/06/26 09:45:33 INFO Executor: Finished task 12.0 in stage 0.0 (TID 12). 1047 bytes result sent to driver
+22/06/26 09:45:33 INFO TaskSetManager: Starting task 13.0 in stage 0.0 (TID 13, localhost, executor driver, partition 13, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:45:33 INFO Executor: Running task 13.0 in stage 0.0 (TID 13)
+22/06/26 09:45:33 INFO TaskSetManager: Finished task 12.0 in stage 0.0 (TID 12) in 2062 ms on localhost (executor driver) (13/65)
+22/06/26 09:45:33 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:436207616+33554432
+22/06/26 09:45:35 INFO Executor: Finished task 13.0 in stage 0.0 (TID 13). 1004 bytes result sent to driver
+22/06/26 09:45:35 INFO TaskSetManager: Starting task 14.0 in stage 0.0 (TID 14, localhost, executor driver, partition 14, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:45:35 INFO Executor: Running task 14.0 in stage 0.0 (TID 14)
+22/06/26 09:45:35 INFO TaskSetManager: Finished task 13.0 in stage 0.0 (TID 13) in 2086 ms on localhost (executor driver) (14/65)
+22/06/26 09:45:35 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:469762048+33554432
+22/06/26 09:45:37 INFO Executor: Finished task 14.0 in stage 0.0 (TID 14). 1047 bytes result sent to driver
+22/06/26 09:45:37 INFO TaskSetManager: Starting task 15.0 in stage 0.0 (TID 15, localhost, executor driver, partition 15, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:45:37 INFO Executor: Running task 15.0 in stage 0.0 (TID 15)
+22/06/26 09:45:37 INFO TaskSetManager: Finished task 14.0 in stage 0.0 (TID 14) in 2060 ms on localhost (executor driver) (15/65)
+22/06/26 09:45:37 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:503316480+33554432
+22/06/26 09:45:39 INFO Executor: Finished task 15.0 in stage 0.0 (TID 15). 1047 bytes result sent to driver
+22/06/26 09:45:39 INFO TaskSetManager: Starting task 16.0 in stage 0.0 (TID 16, localhost, executor driver, partition 16, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:45:39 INFO Executor: Running task 16.0 in stage 0.0 (TID 16)
+22/06/26 09:45:39 INFO TaskSetManager: Finished task 15.0 in stage 0.0 (TID 15) in 2084 ms on localhost (executor driver) (16/65)
+22/06/26 09:45:39 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:536870912+33554432
+22/06/26 09:45:41 INFO Executor: Finished task 16.0 in stage 0.0 (TID 16). 1047 bytes result sent to driver
+22/06/26 09:45:41 INFO TaskSetManager: Starting task 17.0 in stage 0.0 (TID 17, localhost, executor driver, partition 17, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:45:41 INFO Executor: Running task 17.0 in stage 0.0 (TID 17)
+22/06/26 09:45:41 INFO TaskSetManager: Finished task 16.0 in stage 0.0 (TID 16) in 2078 ms on localhost (executor driver) (17/65)
+22/06/26 09:45:41 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:570425344+33554432
+22/06/26 09:45:43 INFO Executor: Finished task 17.0 in stage 0.0 (TID 17). 1047 bytes result sent to driver
+22/06/26 09:45:43 INFO TaskSetManager: Starting task 18.0 in stage 0.0 (TID 18, localhost, executor driver, partition 18, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:45:43 INFO Executor: Running task 18.0 in stage 0.0 (TID 18)
+22/06/26 09:45:43 INFO TaskSetManager: Finished task 17.0 in stage 0.0 (TID 17) in 2083 ms on localhost (executor driver) (18/65)
+22/06/26 09:45:43 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:603979776+33554432
+22/06/26 09:45:45 INFO Executor: Finished task 18.0 in stage 0.0 (TID 18). 1004 bytes result sent to driver
+22/06/26 09:45:45 INFO TaskSetManager: Starting task 19.0 in stage 0.0 (TID 19, localhost, executor driver, partition 19, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:45:45 INFO Executor: Running task 19.0 in stage 0.0 (TID 19)
+22/06/26 09:45:45 INFO TaskSetManager: Finished task 18.0 in stage 0.0 (TID 18) in 2058 ms on localhost (executor driver) (19/65)
+22/06/26 09:45:45 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:637534208+33554432
+22/06/26 09:45:48 INFO Executor: Finished task 19.0 in stage 0.0 (TID 19). 1047 bytes result sent to driver
+22/06/26 09:45:48 INFO TaskSetManager: Starting task 20.0 in stage 0.0 (TID 20, localhost, executor driver, partition 20, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:45:48 INFO Executor: Running task 20.0 in stage 0.0 (TID 20)
+22/06/26 09:45:48 INFO TaskSetManager: Finished task 19.0 in stage 0.0 (TID 19) in 2088 ms on localhost (executor driver) (20/65)
+22/06/26 09:45:48 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:671088640+33554432
+22/06/26 09:45:50 INFO Executor: Finished task 20.0 in stage 0.0 (TID 20). 1004 bytes result sent to driver
+22/06/26 09:45:50 INFO TaskSetManager: Starting task 21.0 in stage 0.0 (TID 21, localhost, executor driver, partition 21, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:45:50 INFO Executor: Running task 21.0 in stage 0.0 (TID 21)
+22/06/26 09:45:50 INFO TaskSetManager: Finished task 20.0 in stage 0.0 (TID 20) in 2216 ms on localhost (executor driver) (21/65)
+22/06/26 09:45:50 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:704643072+33554432
+22/06/26 09:45:52 INFO Executor: Finished task 21.0 in stage 0.0 (TID 21). 1047 bytes result sent to driver
+22/06/26 09:45:52 INFO TaskSetManager: Starting task 22.0 in stage 0.0 (TID 22, localhost, executor driver, partition 22, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:45:52 INFO Executor: Running task 22.0 in stage 0.0 (TID 22)
+22/06/26 09:45:52 INFO TaskSetManager: Finished task 21.0 in stage 0.0 (TID 21) in 2074 ms on localhost (executor driver) (22/65)
+22/06/26 09:45:52 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:738197504+33554432
+22/06/26 09:45:54 INFO Executor: Finished task 22.0 in stage 0.0 (TID 22). 1004 bytes result sent to driver
+22/06/26 09:45:54 INFO TaskSetManager: Starting task 23.0 in stage 0.0 (TID 23, localhost, executor driver, partition 23, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:45:54 INFO Executor: Running task 23.0 in stage 0.0 (TID 23)
+22/06/26 09:45:54 INFO TaskSetManager: Finished task 22.0 in stage 0.0 (TID 22) in 2119 ms on localhost (executor driver) (23/65)
+22/06/26 09:45:54 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:771751936+33554432
+22/06/26 09:45:56 INFO Executor: Finished task 23.0 in stage 0.0 (TID 23). 1004 bytes result sent to driver
+22/06/26 09:45:56 INFO TaskSetManager: Starting task 24.0 in stage 0.0 (TID 24, localhost, executor driver, partition 24, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:45:56 INFO Executor: Running task 24.0 in stage 0.0 (TID 24)
+22/06/26 09:45:56 INFO TaskSetManager: Finished task 23.0 in stage 0.0 (TID 23) in 2080 ms on localhost (executor driver) (24/65)
+22/06/26 09:45:56 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:805306368+33554432
+22/06/26 09:45:58 INFO Executor: Finished task 24.0 in stage 0.0 (TID 24). 1047 bytes result sent to driver
+22/06/26 09:45:58 INFO TaskSetManager: Starting task 25.0 in stage 0.0 (TID 25, localhost, executor driver, partition 25, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:45:58 INFO Executor: Running task 25.0 in stage 0.0 (TID 25)
+22/06/26 09:45:58 INFO TaskSetManager: Finished task 24.0 in stage 0.0 (TID 24) in 2171 ms on localhost (executor driver) (25/65)
+22/06/26 09:45:58 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:838860800+33554432
+22/06/26 09:46:00 INFO Executor: Finished task 25.0 in stage 0.0 (TID 25). 1047 bytes result sent to driver
+22/06/26 09:46:00 INFO TaskSetManager: Starting task 26.0 in stage 0.0 (TID 26, localhost, executor driver, partition 26, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:46:00 INFO Executor: Running task 26.0 in stage 0.0 (TID 26)
+22/06/26 09:46:00 INFO TaskSetManager: Finished task 25.0 in stage 0.0 (TID 25) in 2049 ms on localhost (executor driver) (26/65)
+22/06/26 09:46:00 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:872415232+33554432
+22/06/26 09:46:02 INFO Executor: Finished task 26.0 in stage 0.0 (TID 26). 1004 bytes result sent to driver
+22/06/26 09:46:02 INFO TaskSetManager: Starting task 27.0 in stage 0.0 (TID 27, localhost, executor driver, partition 27, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:46:02 INFO Executor: Running task 27.0 in stage 0.0 (TID 27)
+22/06/26 09:46:02 INFO TaskSetManager: Finished task 26.0 in stage 0.0 (TID 26) in 2054 ms on localhost (executor driver) (27/65)
+22/06/26 09:46:02 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:905969664+33554432
+22/06/26 09:46:04 INFO Executor: Finished task 27.0 in stage 0.0 (TID 27). 1047 bytes result sent to driver
+22/06/26 09:46:04 INFO TaskSetManager: Starting task 28.0 in stage 0.0 (TID 28, localhost, executor driver, partition 28, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:46:04 INFO Executor: Running task 28.0 in stage 0.0 (TID 28)
+22/06/26 09:46:04 INFO TaskSetManager: Finished task 27.0 in stage 0.0 (TID 27) in 2045 ms on localhost (executor driver) (28/65)
+22/06/26 09:46:04 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:939524096+33554432
+22/06/26 09:46:06 INFO Executor: Finished task 28.0 in stage 0.0 (TID 28). 1004 bytes result sent to driver
+22/06/26 09:46:06 INFO TaskSetManager: Starting task 29.0 in stage 0.0 (TID 29, localhost, executor driver, partition 29, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:46:06 INFO Executor: Running task 29.0 in stage 0.0 (TID 29)
+22/06/26 09:46:06 INFO TaskSetManager: Finished task 28.0 in stage 0.0 (TID 28) in 2058 ms on localhost (executor driver) (29/65)
+22/06/26 09:46:06 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:973078528+33554432
+22/06/26 09:46:08 INFO Executor: Finished task 29.0 in stage 0.0 (TID 29). 1047 bytes result sent to driver
+22/06/26 09:46:08 INFO TaskSetManager: Starting task 30.0 in stage 0.0 (TID 30, localhost, executor driver, partition 30, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:46:08 INFO Executor: Running task 30.0 in stage 0.0 (TID 30)
+22/06/26 09:46:08 INFO TaskSetManager: Finished task 29.0 in stage 0.0 (TID 29) in 2030 ms on localhost (executor driver) (30/65)
+22/06/26 09:46:08 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:1006632960+33554432
+22/06/26 09:46:10 INFO Executor: Finished task 30.0 in stage 0.0 (TID 30). 1047 bytes result sent to driver
+22/06/26 09:46:10 INFO TaskSetManager: Starting task 31.0 in stage 0.0 (TID 31, localhost, executor driver, partition 31, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:46:10 INFO Executor: Running task 31.0 in stage 0.0 (TID 31)
+22/06/26 09:46:10 INFO TaskSetManager: Finished task 30.0 in stage 0.0 (TID 30) in 2019 ms on localhost (executor driver) (31/65)
+22/06/26 09:46:10 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:1040187392+33554432
+22/06/26 09:46:12 INFO Executor: Finished task 31.0 in stage 0.0 (TID 31). 1047 bytes result sent to driver
+22/06/26 09:46:12 INFO TaskSetManager: Starting task 32.0 in stage 0.0 (TID 32, localhost, executor driver, partition 32, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:46:12 INFO Executor: Running task 32.0 in stage 0.0 (TID 32)
+22/06/26 09:46:12 INFO TaskSetManager: Finished task 31.0 in stage 0.0 (TID 31) in 2040 ms on localhost (executor driver) (32/65)
+22/06/26 09:46:12 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:1073741824+33554432
+22/06/26 09:46:15 INFO Executor: Finished task 32.0 in stage 0.0 (TID 32). 1047 bytes result sent to driver
+22/06/26 09:46:15 INFO TaskSetManager: Starting task 33.0 in stage 0.0 (TID 33, localhost, executor driver, partition 33, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:46:15 INFO Executor: Running task 33.0 in stage 0.0 (TID 33)
+22/06/26 09:46:15 INFO TaskSetManager: Finished task 32.0 in stage 0.0 (TID 32) in 2434 ms on localhost (executor driver) (33/65)
+22/06/26 09:46:15 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:1107296256+33554432
+22/06/26 09:46:17 INFO Executor: Finished task 33.0 in stage 0.0 (TID 33). 1090 bytes result sent to driver
+22/06/26 09:46:17 INFO TaskSetManager: Starting task 34.0 in stage 0.0 (TID 34, localhost, executor driver, partition 34, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:46:17 INFO Executor: Running task 34.0 in stage 0.0 (TID 34)
+22/06/26 09:46:17 INFO TaskSetManager: Finished task 33.0 in stage 0.0 (TID 33) in 2061 ms on localhost (executor driver) (34/65)
+22/06/26 09:46:17 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:1140850688+33554432
+22/06/26 09:46:19 INFO Executor: Finished task 34.0 in stage 0.0 (TID 34). 1004 bytes result sent to driver
+22/06/26 09:46:19 INFO TaskSetManager: Starting task 35.0 in stage 0.0 (TID 35, localhost, executor driver, partition 35, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:46:19 INFO Executor: Running task 35.0 in stage 0.0 (TID 35)
+22/06/26 09:46:19 INFO TaskSetManager: Finished task 34.0 in stage 0.0 (TID 34) in 2015 ms on localhost (executor driver) (35/65)
+22/06/26 09:46:19 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:1174405120+33554432
+22/06/26 09:46:21 INFO Executor: Finished task 35.0 in stage 0.0 (TID 35). 1004 bytes result sent to driver
+22/06/26 09:46:21 INFO TaskSetManager: Starting task 36.0 in stage 0.0 (TID 36, localhost, executor driver, partition 36, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:46:21 INFO Executor: Running task 36.0 in stage 0.0 (TID 36)
+22/06/26 09:46:21 INFO TaskSetManager: Finished task 35.0 in stage 0.0 (TID 35) in 2031 ms on localhost (executor driver) (36/65)
+22/06/26 09:46:21 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:1207959552+33554432
+22/06/26 09:46:23 INFO Executor: Finished task 36.0 in stage 0.0 (TID 36). 1004 bytes result sent to driver
+22/06/26 09:46:23 INFO TaskSetManager: Starting task 37.0 in stage 0.0 (TID 37, localhost, executor driver, partition 37, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:46:23 INFO Executor: Running task 37.0 in stage 0.0 (TID 37)
+22/06/26 09:46:23 INFO TaskSetManager: Finished task 36.0 in stage 0.0 (TID 36) in 2035 ms on localhost (executor driver) (37/65)
+22/06/26 09:46:23 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:1241513984+33554432
+22/06/26 09:46:25 INFO Executor: Finished task 37.0 in stage 0.0 (TID 37). 1090 bytes result sent to driver
+22/06/26 09:46:25 INFO TaskSetManager: Starting task 38.0 in stage 0.0 (TID 38, localhost, executor driver, partition 38, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:46:25 INFO Executor: Running task 38.0 in stage 0.0 (TID 38)
+22/06/26 09:46:25 INFO TaskSetManager: Finished task 37.0 in stage 0.0 (TID 37) in 2046 ms on localhost (executor driver) (38/65)
+22/06/26 09:46:25 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:1275068416+33554432
+22/06/26 09:46:27 INFO Executor: Finished task 38.0 in stage 0.0 (TID 38). 1004 bytes result sent to driver
+22/06/26 09:46:27 INFO TaskSetManager: Starting task 39.0 in stage 0.0 (TID 39, localhost, executor driver, partition 39, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:46:27 INFO Executor: Running task 39.0 in stage 0.0 (TID 39)
+22/06/26 09:46:27 INFO TaskSetManager: Finished task 38.0 in stage 0.0 (TID 38) in 2023 ms on localhost (executor driver) (39/65)
+22/06/26 09:46:27 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:1308622848+33554432
+22/06/26 09:46:29 INFO Executor: Finished task 39.0 in stage 0.0 (TID 39). 1047 bytes result sent to driver
+22/06/26 09:46:29 INFO TaskSetManager: Starting task 40.0 in stage 0.0 (TID 40, localhost, executor driver, partition 40, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:46:29 INFO Executor: Running task 40.0 in stage 0.0 (TID 40)
+22/06/26 09:46:29 INFO TaskSetManager: Finished task 39.0 in stage 0.0 (TID 39) in 2021 ms on localhost (executor driver) (40/65)
+22/06/26 09:46:29 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:1342177280+33554432
+22/06/26 09:46:31 INFO Executor: Finished task 40.0 in stage 0.0 (TID 40). 1004 bytes result sent to driver
+22/06/26 09:46:31 INFO TaskSetManager: Starting task 41.0 in stage 0.0 (TID 41, localhost, executor driver, partition 41, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:46:31 INFO Executor: Running task 41.0 in stage 0.0 (TID 41)
+22/06/26 09:46:31 INFO TaskSetManager: Finished task 40.0 in stage 0.0 (TID 40) in 2104 ms on localhost (executor driver) (41/65)
+22/06/26 09:46:31 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:1375731712+33554432
+22/06/26 09:46:33 INFO Executor: Finished task 41.0 in stage 0.0 (TID 41). 1004 bytes result sent to driver
+22/06/26 09:46:33 INFO TaskSetManager: Starting task 42.0 in stage 0.0 (TID 42, localhost, executor driver, partition 42, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:46:33 INFO Executor: Running task 42.0 in stage 0.0 (TID 42)
+22/06/26 09:46:33 INFO TaskSetManager: Finished task 41.0 in stage 0.0 (TID 41) in 2063 ms on localhost (executor driver) (42/65)
+22/06/26 09:46:33 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:1409286144+33554432
+22/06/26 09:46:35 INFO Executor: Finished task 42.0 in stage 0.0 (TID 42). 1047 bytes result sent to driver
+22/06/26 09:46:35 INFO TaskSetManager: Starting task 43.0 in stage 0.0 (TID 43, localhost, executor driver, partition 43, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:46:35 INFO Executor: Running task 43.0 in stage 0.0 (TID 43)
+22/06/26 09:46:35 INFO TaskSetManager: Finished task 42.0 in stage 0.0 (TID 42) in 1988 ms on localhost (executor driver) (43/65)
+22/06/26 09:46:35 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:1442840576+33554432
+22/06/26 09:46:37 INFO Executor: Finished task 43.0 in stage 0.0 (TID 43). 1047 bytes result sent to driver
+22/06/26 09:46:37 INFO TaskSetManager: Starting task 44.0 in stage 0.0 (TID 44, localhost, executor driver, partition 44, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:46:37 INFO Executor: Running task 44.0 in stage 0.0 (TID 44)
+22/06/26 09:46:37 INFO TaskSetManager: Finished task 43.0 in stage 0.0 (TID 43) in 2191 ms on localhost (executor driver) (44/65)
+22/06/26 09:46:37 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:1476395008+33554432
+22/06/26 09:46:40 INFO Executor: Finished task 44.0 in stage 0.0 (TID 44). 1047 bytes result sent to driver
+22/06/26 09:46:40 INFO TaskSetManager: Starting task 45.0 in stage 0.0 (TID 45, localhost, executor driver, partition 45, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:46:40 INFO Executor: Running task 45.0 in stage 0.0 (TID 45)
+22/06/26 09:46:40 INFO TaskSetManager: Finished task 44.0 in stage 0.0 (TID 44) in 2084 ms on localhost (executor driver) (45/65)
+22/06/26 09:46:40 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:1509949440+33554432
+22/06/26 09:46:42 INFO Executor: Finished task 45.0 in stage 0.0 (TID 45). 1047 bytes result sent to driver
+22/06/26 09:46:42 INFO TaskSetManager: Starting task 46.0 in stage 0.0 (TID 46, localhost, executor driver, partition 46, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:46:42 INFO Executor: Running task 46.0 in stage 0.0 (TID 46)
+22/06/26 09:46:42 INFO TaskSetManager: Finished task 45.0 in stage 0.0 (TID 45) in 2060 ms on localhost (executor driver) (46/65)
+22/06/26 09:46:42 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:1543503872+33554432
+22/06/26 09:46:44 INFO Executor: Finished task 46.0 in stage 0.0 (TID 46). 1047 bytes result sent to driver
+22/06/26 09:46:44 INFO TaskSetManager: Starting task 47.0 in stage 0.0 (TID 47, localhost, executor driver, partition 47, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:46:44 INFO Executor: Running task 47.0 in stage 0.0 (TID 47)
+22/06/26 09:46:44 INFO TaskSetManager: Finished task 46.0 in stage 0.0 (TID 46) in 2036 ms on localhost (executor driver) (47/65)
+22/06/26 09:46:44 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:1577058304+33554432
+22/06/26 09:46:46 INFO Executor: Finished task 47.0 in stage 0.0 (TID 47). 1004 bytes result sent to driver
+22/06/26 09:46:46 INFO TaskSetManager: Starting task 48.0 in stage 0.0 (TID 48, localhost, executor driver, partition 48, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:46:46 INFO Executor: Running task 48.0 in stage 0.0 (TID 48)
+22/06/26 09:46:46 INFO TaskSetManager: Finished task 47.0 in stage 0.0 (TID 47) in 2019 ms on localhost (executor driver) (48/65)
+22/06/26 09:46:46 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:1610612736+33554432
+22/06/26 09:46:48 INFO Executor: Finished task 48.0 in stage 0.0 (TID 48). 1047 bytes result sent to driver
+22/06/26 09:46:48 INFO TaskSetManager: Starting task 49.0 in stage 0.0 (TID 49, localhost, executor driver, partition 49, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:46:48 INFO Executor: Running task 49.0 in stage 0.0 (TID 49)
+22/06/26 09:46:48 INFO TaskSetManager: Finished task 48.0 in stage 0.0 (TID 48) in 2025 ms on localhost (executor driver) (49/65)
+22/06/26 09:46:48 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:1644167168+33554432
+22/06/26 09:46:50 INFO Executor: Finished task 49.0 in stage 0.0 (TID 49). 1047 bytes result sent to driver
+22/06/26 09:46:50 INFO TaskSetManager: Starting task 50.0 in stage 0.0 (TID 50, localhost, executor driver, partition 50, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:46:50 INFO Executor: Running task 50.0 in stage 0.0 (TID 50)
+22/06/26 09:46:50 INFO TaskSetManager: Finished task 49.0 in stage 0.0 (TID 49) in 2084 ms on localhost (executor driver) (50/65)
+22/06/26 09:46:50 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:1677721600+33554432
+22/06/26 09:46:52 INFO Executor: Finished task 50.0 in stage 0.0 (TID 50). 1047 bytes result sent to driver
+22/06/26 09:46:52 INFO TaskSetManager: Starting task 51.0 in stage 0.0 (TID 51, localhost, executor driver, partition 51, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:46:52 INFO Executor: Running task 51.0 in stage 0.0 (TID 51)
+22/06/26 09:46:52 INFO TaskSetManager: Finished task 50.0 in stage 0.0 (TID 50) in 2044 ms on localhost (executor driver) (51/65)
+22/06/26 09:46:52 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:1711276032+33554432
+22/06/26 09:46:54 INFO Executor: Finished task 51.0 in stage 0.0 (TID 51). 1047 bytes result sent to driver
+22/06/26 09:46:54 INFO TaskSetManager: Starting task 52.0 in stage 0.0 (TID 52, localhost, executor driver, partition 52, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:46:54 INFO Executor: Running task 52.0 in stage 0.0 (TID 52)
+22/06/26 09:46:54 INFO TaskSetManager: Finished task 51.0 in stage 0.0 (TID 51) in 2002 ms on localhost (executor driver) (52/65)
+22/06/26 09:46:54 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:1744830464+33554432
+22/06/26 09:46:56 INFO Executor: Finished task 52.0 in stage 0.0 (TID 52). 1047 bytes result sent to driver
+22/06/26 09:46:56 INFO TaskSetManager: Starting task 53.0 in stage 0.0 (TID 53, localhost, executor driver, partition 53, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:46:56 INFO Executor: Running task 53.0 in stage 0.0 (TID 53)
+22/06/26 09:46:56 INFO TaskSetManager: Finished task 52.0 in stage 0.0 (TID 52) in 2091 ms on localhost (executor driver) (53/65)
+22/06/26 09:46:56 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:1778384896+33554432
+22/06/26 09:46:58 INFO Executor: Finished task 53.0 in stage 0.0 (TID 53). 1047 bytes result sent to driver
+22/06/26 09:46:58 INFO TaskSetManager: Starting task 54.0 in stage 0.0 (TID 54, localhost, executor driver, partition 54, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:46:58 INFO Executor: Running task 54.0 in stage 0.0 (TID 54)
+22/06/26 09:46:58 INFO TaskSetManager: Finished task 53.0 in stage 0.0 (TID 53) in 2062 ms on localhost (executor driver) (54/65)
+22/06/26 09:46:58 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:1811939328+33554432
+22/06/26 09:47:00 INFO Executor: Finished task 54.0 in stage 0.0 (TID 54). 1004 bytes result sent to driver
+22/06/26 09:47:00 INFO TaskSetManager: Starting task 55.0 in stage 0.0 (TID 55, localhost, executor driver, partition 55, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:47:00 INFO Executor: Running task 55.0 in stage 0.0 (TID 55)
+22/06/26 09:47:00 INFO TaskSetManager: Finished task 54.0 in stage 0.0 (TID 54) in 2067 ms on localhost (executor driver) (55/65)
+22/06/26 09:47:00 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:1845493760+33554432
+22/06/26 09:47:02 INFO Executor: Finished task 55.0 in stage 0.0 (TID 55). 1047 bytes result sent to driver
+22/06/26 09:47:02 INFO TaskSetManager: Starting task 56.0 in stage 0.0 (TID 56, localhost, executor driver, partition 56, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:47:02 INFO Executor: Running task 56.0 in stage 0.0 (TID 56)
+22/06/26 09:47:02 INFO TaskSetManager: Finished task 55.0 in stage 0.0 (TID 55) in 2018 ms on localhost (executor driver) (56/65)
+22/06/26 09:47:02 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:1879048192+33554432
+22/06/26 09:47:04 INFO Executor: Finished task 56.0 in stage 0.0 (TID 56). 1047 bytes result sent to driver
+22/06/26 09:47:04 INFO TaskSetManager: Starting task 57.0 in stage 0.0 (TID 57, localhost, executor driver, partition 57, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:47:04 INFO Executor: Running task 57.0 in stage 0.0 (TID 57)
+22/06/26 09:47:04 INFO TaskSetManager: Finished task 56.0 in stage 0.0 (TID 56) in 2107 ms on localhost (executor driver) (57/65)
+22/06/26 09:47:04 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:1912602624+33554432
+22/06/26 09:47:06 INFO Executor: Finished task 57.0 in stage 0.0 (TID 57). 1047 bytes result sent to driver
+22/06/26 09:47:06 INFO TaskSetManager: Starting task 58.0 in stage 0.0 (TID 58, localhost, executor driver, partition 58, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:47:06 INFO Executor: Running task 58.0 in stage 0.0 (TID 58)
+22/06/26 09:47:06 INFO TaskSetManager: Finished task 57.0 in stage 0.0 (TID 57) in 2024 ms on localhost (executor driver) (58/65)
+22/06/26 09:47:06 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:1946157056+33554432
+22/06/26 09:47:08 INFO Executor: Finished task 58.0 in stage 0.0 (TID 58). 1004 bytes result sent to driver
+22/06/26 09:47:08 INFO TaskSetManager: Starting task 59.0 in stage 0.0 (TID 59, localhost, executor driver, partition 59, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:47:08 INFO Executor: Running task 59.0 in stage 0.0 (TID 59)
+22/06/26 09:47:08 INFO TaskSetManager: Finished task 58.0 in stage 0.0 (TID 58) in 2047 ms on localhost (executor driver) (59/65)
+22/06/26 09:47:08 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:1979711488+33554432
+22/06/26 09:47:10 INFO Executor: Finished task 59.0 in stage 0.0 (TID 59). 1047 bytes result sent to driver
+22/06/26 09:47:10 INFO TaskSetManager: Starting task 60.0 in stage 0.0 (TID 60, localhost, executor driver, partition 60, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:47:10 INFO Executor: Running task 60.0 in stage 0.0 (TID 60)
+22/06/26 09:47:10 INFO TaskSetManager: Finished task 59.0 in stage 0.0 (TID 59) in 2055 ms on localhost (executor driver) (60/65)
+22/06/26 09:47:10 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:2013265920+33554432
+22/06/26 09:47:12 INFO Executor: Finished task 60.0 in stage 0.0 (TID 60). 1047 bytes result sent to driver
+22/06/26 09:47:12 INFO TaskSetManager: Starting task 61.0 in stage 0.0 (TID 61, localhost, executor driver, partition 61, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:47:12 INFO TaskSetManager: Finished task 60.0 in stage 0.0 (TID 60) in 2067 ms on localhost (executor driver) (61/65)
+22/06/26 09:47:12 INFO Executor: Running task 61.0 in stage 0.0 (TID 61)
+22/06/26 09:47:12 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:2046820352+33554432
+22/06/26 09:47:14 INFO Executor: Finished task 61.0 in stage 0.0 (TID 61). 1047 bytes result sent to driver
+22/06/26 09:47:14 INFO TaskSetManager: Starting task 62.0 in stage 0.0 (TID 62, localhost, executor driver, partition 62, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:47:14 INFO Executor: Running task 62.0 in stage 0.0 (TID 62)
+22/06/26 09:47:14 INFO TaskSetManager: Finished task 61.0 in stage 0.0 (TID 61) in 2073 ms on localhost (executor driver) (62/65)
+22/06/26 09:47:14 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:2080374784+33554432
+22/06/26 09:47:16 INFO Executor: Finished task 62.0 in stage 0.0 (TID 62). 1047 bytes result sent to driver
+22/06/26 09:47:16 INFO TaskSetManager: Starting task 63.0 in stage 0.0 (TID 63, localhost, executor driver, partition 63, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:47:16 INFO Executor: Running task 63.0 in stage 0.0 (TID 63)
+22/06/26 09:47:16 INFO TaskSetManager: Finished task 62.0 in stage 0.0 (TID 62) in 2069 ms on localhost (executor driver) (63/65)
+22/06/26 09:47:16 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:2113929216+33554432
+22/06/26 09:47:19 INFO Executor: Finished task 63.0 in stage 0.0 (TID 63). 1004 bytes result sent to driver
+22/06/26 09:47:19 INFO TaskSetManager: Starting task 64.0 in stage 0.0 (TID 64, localhost, executor driver, partition 64, PROCESS_LOCAL, 7923 bytes)
+22/06/26 09:47:19 INFO Executor: Running task 64.0 in stage 0.0 (TID 64)
+22/06/26 09:47:19 INFO TaskSetManager: Finished task 63.0 in stage 0.0 (TID 63) in 2079 ms on localhost (executor driver) (64/65)
+22/06/26 09:47:19 INFO HadoopRDD: Input split: file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/input/pd.train:2147483648+26081833
+22/06/26 09:47:20 INFO Executor: Finished task 64.0 in stage 0.0 (TID 64). 1004 bytes result sent to driver
+22/06/26 09:47:20 INFO TaskSetManager: Finished task 64.0 in stage 0.0 (TID 64) in 1694 ms on localhost (executor driver) (65/65)
+22/06/26 09:47:20 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+22/06/26 09:47:20 INFO DAGScheduler: ShuffleMapStage 0 (map at WordCount.scala:20) finished in 135.923 s
+22/06/26 09:47:20 INFO DAGScheduler: looking for newly runnable stages
+22/06/26 09:47:20 INFO DAGScheduler: running: Set()
+22/06/26 09:47:20 INFO DAGScheduler: waiting: Set(ResultStage 1)
+22/06/26 09:47:20 INFO DAGScheduler: failed: Set()
+22/06/26 09:47:20 INFO DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[6] at saveAsTextFile at WordCount.scala:28), which has no missing parents
+22/06/26 09:47:20 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 69.4 KB, free 888.6 MB)
+22/06/26 09:47:20 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 25.5 KB, free 888.6 MB)
+22/06/26 09:47:20 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 192.168.101.23:5296 (size: 25.5 KB, free: 888.9 MB)
+22/06/26 09:47:20 INFO SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:1184
+22/06/26 09:47:20 INFO DAGScheduler: Submitting 65 missing tasks from ResultStage 1 (MapPartitionsRDD[6] at saveAsTextFile at WordCount.scala:28) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14))
+22/06/26 09:47:20 INFO TaskSchedulerImpl: Adding task set 1.0 with 65 tasks
+22/06/26 09:47:20 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 65, localhost, executor driver, partition 0, ANY, 7662 bytes)
+22/06/26 09:47:20 INFO Executor: Running task 0.0 in stage 1.0 (TID 65)
+22/06/26 09:47:20 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:47:20 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 9 ms
+22/06/26 09:47:22 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:47:22 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000000_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000000
+22/06/26 09:47:22 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000000_0: Committed
+22/06/26 09:47:22 INFO Executor: Finished task 0.0 in stage 1.0 (TID 65). 1502 bytes result sent to driver
+22/06/26 09:47:22 INFO TaskSetManager: Starting task 1.0 in stage 1.0 (TID 66, localhost, executor driver, partition 1, ANY, 7662 bytes)
+22/06/26 09:47:22 INFO Executor: Running task 1.0 in stage 1.0 (TID 66)
+22/06/26 09:47:22 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 65) in 1452 ms on localhost (executor driver) (1/65)
+22/06/26 09:47:22 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:47:22 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 09:47:22 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:47:23 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000001_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000001
+22/06/26 09:47:23 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000001_0: Committed
+22/06/26 09:47:23 INFO Executor: Finished task 1.0 in stage 1.0 (TID 66). 1459 bytes result sent to driver
+22/06/26 09:47:23 INFO TaskSetManager: Starting task 2.0 in stage 1.0 (TID 67, localhost, executor driver, partition 2, ANY, 7662 bytes)
+22/06/26 09:47:23 INFO Executor: Running task 2.0 in stage 1.0 (TID 67)
+22/06/26 09:47:23 INFO TaskSetManager: Finished task 1.0 in stage 1.0 (TID 66) in 724 ms on localhost (executor driver) (2/65)
+22/06/26 09:47:23 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:47:23 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 09:47:23 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:47:23 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000002_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000002
+22/06/26 09:47:23 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000002_0: Committed
+22/06/26 09:47:23 INFO Executor: Finished task 2.0 in stage 1.0 (TID 67). 1459 bytes result sent to driver
+22/06/26 09:47:23 INFO TaskSetManager: Starting task 3.0 in stage 1.0 (TID 68, localhost, executor driver, partition 3, ANY, 7662 bytes)
+22/06/26 09:47:23 INFO Executor: Running task 3.0 in stage 1.0 (TID 68)
+22/06/26 09:47:23 INFO TaskSetManager: Finished task 2.0 in stage 1.0 (TID 67) in 959 ms on localhost (executor driver) (3/65)
+22/06/26 09:47:23 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:47:23 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+22/06/26 09:47:25 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:47:25 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000003_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000003
+22/06/26 09:47:25 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000003_0: Committed
+22/06/26 09:47:25 INFO Executor: Finished task 3.0 in stage 1.0 (TID 68). 1459 bytes result sent to driver
+22/06/26 09:47:25 INFO TaskSetManager: Starting task 4.0 in stage 1.0 (TID 69, localhost, executor driver, partition 4, ANY, 7662 bytes)
+22/06/26 09:47:25 INFO Executor: Running task 4.0 in stage 1.0 (TID 69)
+22/06/26 09:47:25 INFO TaskSetManager: Finished task 3.0 in stage 1.0 (TID 68) in 1266 ms on localhost (executor driver) (4/65)
+22/06/26 09:47:25 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:47:25 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+22/06/26 09:47:26 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 192.168.101.23:5296 in memory (size: 3.3 KB, free: 888.9 MB)
+22/06/26 09:47:27 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:47:27 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000004_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000004
+22/06/26 09:47:27 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000004_0: Committed
+22/06/26 09:47:27 INFO Executor: Finished task 4.0 in stage 1.0 (TID 69). 1502 bytes result sent to driver
+22/06/26 09:47:27 INFO TaskSetManager: Starting task 5.0 in stage 1.0 (TID 70, localhost, executor driver, partition 5, ANY, 7662 bytes)
+22/06/26 09:47:27 INFO Executor: Running task 5.0 in stage 1.0 (TID 70)
+22/06/26 09:47:27 INFO TaskSetManager: Finished task 4.0 in stage 1.0 (TID 69) in 1935 ms on localhost (executor driver) (5/65)
+22/06/26 09:47:27 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:47:27 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 09:47:29 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:47:29 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000005_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000005
+22/06/26 09:47:29 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000005_0: Committed
+22/06/26 09:47:29 INFO Executor: Finished task 5.0 in stage 1.0 (TID 70). 1502 bytes result sent to driver
+22/06/26 09:47:29 INFO TaskSetManager: Starting task 6.0 in stage 1.0 (TID 71, localhost, executor driver, partition 6, ANY, 7662 bytes)
+22/06/26 09:47:29 INFO Executor: Running task 6.0 in stage 1.0 (TID 71)
+22/06/26 09:47:29 INFO TaskSetManager: Finished task 5.0 in stage 1.0 (TID 70) in 2794 ms on localhost (executor driver) (6/65)
+22/06/26 09:47:29 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:47:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 09:47:31 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:47:31 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000006_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000006
+22/06/26 09:47:31 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000006_0: Committed
+22/06/26 09:47:31 INFO Executor: Finished task 6.0 in stage 1.0 (TID 71). 1459 bytes result sent to driver
+22/06/26 09:47:31 INFO TaskSetManager: Starting task 7.0 in stage 1.0 (TID 72, localhost, executor driver, partition 7, ANY, 7662 bytes)
+22/06/26 09:47:31 INFO Executor: Running task 7.0 in stage 1.0 (TID 72)
+22/06/26 09:47:31 INFO TaskSetManager: Finished task 6.0 in stage 1.0 (TID 71) in 1703 ms on localhost (executor driver) (7/65)
+22/06/26 09:47:31 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:47:31 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+22/06/26 09:47:32 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:47:32 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000007_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000007
+22/06/26 09:47:32 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000007_0: Committed
+22/06/26 09:47:32 INFO Executor: Finished task 7.0 in stage 1.0 (TID 72). 1459 bytes result sent to driver
+22/06/26 09:47:32 INFO TaskSetManager: Starting task 8.0 in stage 1.0 (TID 73, localhost, executor driver, partition 8, ANY, 7662 bytes)
+22/06/26 09:47:32 INFO Executor: Running task 8.0 in stage 1.0 (TID 73)
+22/06/26 09:47:32 INFO TaskSetManager: Finished task 7.0 in stage 1.0 (TID 72) in 1156 ms on localhost (executor driver) (8/65)
+22/06/26 09:47:32 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:47:32 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 09:47:33 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:47:33 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000008_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000008
+22/06/26 09:47:33 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000008_0: Committed
+22/06/26 09:47:33 INFO Executor: Finished task 8.0 in stage 1.0 (TID 73). 1459 bytes result sent to driver
+22/06/26 09:47:33 INFO TaskSetManager: Starting task 9.0 in stage 1.0 (TID 74, localhost, executor driver, partition 9, ANY, 7662 bytes)
+22/06/26 09:47:33 INFO Executor: Running task 9.0 in stage 1.0 (TID 74)
+22/06/26 09:47:33 INFO TaskSetManager: Finished task 8.0 in stage 1.0 (TID 73) in 1079 ms on localhost (executor driver) (9/65)
+22/06/26 09:47:33 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:47:33 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 09:47:34 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:47:34 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000009_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000009
+22/06/26 09:47:34 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000009_0: Committed
+22/06/26 09:47:34 INFO Executor: Finished task 9.0 in stage 1.0 (TID 74). 1459 bytes result sent to driver
+22/06/26 09:47:34 INFO TaskSetManager: Starting task 10.0 in stage 1.0 (TID 75, localhost, executor driver, partition 10, ANY, 7662 bytes)
+22/06/26 09:47:34 INFO Executor: Running task 10.0 in stage 1.0 (TID 75)
+22/06/26 09:47:34 INFO TaskSetManager: Finished task 9.0 in stage 1.0 (TID 74) in 894 ms on localhost (executor driver) (10/65)
+22/06/26 09:47:34 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:47:34 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 09:47:36 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:47:36 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000010_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000010
+22/06/26 09:47:36 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000010_0: Committed
+22/06/26 09:47:36 INFO Executor: Finished task 10.0 in stage 1.0 (TID 75). 1459 bytes result sent to driver
+22/06/26 09:47:36 INFO TaskSetManager: Starting task 11.0 in stage 1.0 (TID 76, localhost, executor driver, partition 11, ANY, 7662 bytes)
+22/06/26 09:47:36 INFO Executor: Running task 11.0 in stage 1.0 (TID 76)
+22/06/26 09:47:36 INFO TaskSetManager: Finished task 10.0 in stage 1.0 (TID 75) in 1416 ms on localhost (executor driver) (11/65)
+22/06/26 09:47:36 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:47:36 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 09:47:36 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:47:36 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000011_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000011
+22/06/26 09:47:36 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000011_0: Committed
+22/06/26 09:47:36 INFO Executor: Finished task 11.0 in stage 1.0 (TID 76). 1459 bytes result sent to driver
+22/06/26 09:47:36 INFO TaskSetManager: Starting task 12.0 in stage 1.0 (TID 77, localhost, executor driver, partition 12, ANY, 7662 bytes)
+22/06/26 09:47:36 INFO Executor: Running task 12.0 in stage 1.0 (TID 77)
+22/06/26 09:47:36 INFO TaskSetManager: Finished task 11.0 in stage 1.0 (TID 76) in 718 ms on localhost (executor driver) (12/65)
+22/06/26 09:47:36 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:47:36 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 09:47:37 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:47:37 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000012_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000012
+22/06/26 09:47:37 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000012_0: Committed
+22/06/26 09:47:37 INFO Executor: Finished task 12.0 in stage 1.0 (TID 77). 1459 bytes result sent to driver
+22/06/26 09:47:37 INFO TaskSetManager: Starting task 13.0 in stage 1.0 (TID 78, localhost, executor driver, partition 13, ANY, 7662 bytes)
+22/06/26 09:47:37 INFO Executor: Running task 13.0 in stage 1.0 (TID 78)
+22/06/26 09:47:37 INFO TaskSetManager: Finished task 12.0 in stage 1.0 (TID 77) in 822 ms on localhost (executor driver) (13/65)
+22/06/26 09:47:37 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:47:37 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 09:47:39 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:47:39 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000013_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000013
+22/06/26 09:47:39 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000013_0: Committed
+22/06/26 09:47:39 INFO Executor: Finished task 13.0 in stage 1.0 (TID 78). 1459 bytes result sent to driver
+22/06/26 09:47:39 INFO TaskSetManager: Starting task 14.0 in stage 1.0 (TID 79, localhost, executor driver, partition 14, ANY, 7662 bytes)
+22/06/26 09:47:39 INFO Executor: Running task 14.0 in stage 1.0 (TID 79)
+22/06/26 09:47:39 INFO TaskSetManager: Finished task 13.0 in stage 1.0 (TID 78) in 1445 ms on localhost (executor driver) (14/65)
+22/06/26 09:47:39 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:47:39 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 09:47:40 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:47:40 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000014_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000014
+22/06/26 09:47:40 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000014_0: Committed
+22/06/26 09:47:40 INFO Executor: Finished task 14.0 in stage 1.0 (TID 79). 1459 bytes result sent to driver
+22/06/26 09:47:40 INFO TaskSetManager: Starting task 15.0 in stage 1.0 (TID 80, localhost, executor driver, partition 15, ANY, 7662 bytes)
+22/06/26 09:47:40 INFO Executor: Running task 15.0 in stage 1.0 (TID 80)
+22/06/26 09:47:40 INFO TaskSetManager: Finished task 14.0 in stage 1.0 (TID 79) in 1254 ms on localhost (executor driver) (15/65)
+22/06/26 09:47:40 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:47:40 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+22/06/26 09:47:41 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:47:41 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000015_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000015
+22/06/26 09:47:41 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000015_0: Committed
+22/06/26 09:47:41 INFO Executor: Finished task 15.0 in stage 1.0 (TID 80). 1459 bytes result sent to driver
+22/06/26 09:47:41 INFO TaskSetManager: Starting task 16.0 in stage 1.0 (TID 81, localhost, executor driver, partition 16, ANY, 7662 bytes)
+22/06/26 09:47:41 INFO Executor: Running task 16.0 in stage 1.0 (TID 81)
+22/06/26 09:47:41 INFO TaskSetManager: Finished task 15.0 in stage 1.0 (TID 80) in 1223 ms on localhost (executor driver) (16/65)
+22/06/26 09:47:41 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:47:41 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 09:47:42 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:47:42 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000016_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000016
+22/06/26 09:47:42 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000016_0: Committed
+22/06/26 09:47:42 INFO Executor: Finished task 16.0 in stage 1.0 (TID 81). 1459 bytes result sent to driver
+22/06/26 09:47:42 INFO TaskSetManager: Starting task 17.0 in stage 1.0 (TID 82, localhost, executor driver, partition 17, ANY, 7662 bytes)
+22/06/26 09:47:42 INFO Executor: Running task 17.0 in stage 1.0 (TID 82)
+22/06/26 09:47:42 INFO TaskSetManager: Finished task 16.0 in stage 1.0 (TID 81) in 923 ms on localhost (executor driver) (17/65)
+22/06/26 09:47:42 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:47:42 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+22/06/26 09:47:44 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:47:45 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000017_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000017
+22/06/26 09:47:45 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000017_0: Committed
+22/06/26 09:47:45 INFO Executor: Finished task 17.0 in stage 1.0 (TID 82). 1459 bytes result sent to driver
+22/06/26 09:47:45 INFO TaskSetManager: Starting task 18.0 in stage 1.0 (TID 83, localhost, executor driver, partition 18, ANY, 7662 bytes)
+22/06/26 09:47:45 INFO Executor: Running task 18.0 in stage 1.0 (TID 83)
+22/06/26 09:47:45 INFO TaskSetManager: Finished task 17.0 in stage 1.0 (TID 82) in 2415 ms on localhost (executor driver) (18/65)
+22/06/26 09:47:45 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:47:45 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 09:47:45 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:47:45 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000018_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000018
+22/06/26 09:47:45 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000018_0: Committed
+22/06/26 09:47:45 INFO Executor: Finished task 18.0 in stage 1.0 (TID 83). 1459 bytes result sent to driver
+22/06/26 09:47:45 INFO TaskSetManager: Starting task 19.0 in stage 1.0 (TID 84, localhost, executor driver, partition 19, ANY, 7662 bytes)
+22/06/26 09:47:45 INFO Executor: Running task 19.0 in stage 1.0 (TID 84)
+22/06/26 09:47:45 INFO TaskSetManager: Finished task 18.0 in stage 1.0 (TID 83) in 748 ms on localhost (executor driver) (19/65)
+22/06/26 09:47:45 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:47:45 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 09:47:46 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:47:46 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000019_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000019
+22/06/26 09:47:46 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000019_0: Committed
+22/06/26 09:47:46 INFO Executor: Finished task 19.0 in stage 1.0 (TID 84). 1459 bytes result sent to driver
+22/06/26 09:47:46 INFO TaskSetManager: Starting task 20.0 in stage 1.0 (TID 85, localhost, executor driver, partition 20, ANY, 7662 bytes)
+22/06/26 09:47:46 INFO Executor: Running task 20.0 in stage 1.0 (TID 85)
+22/06/26 09:47:46 INFO TaskSetManager: Finished task 19.0 in stage 1.0 (TID 84) in 555 ms on localhost (executor driver) (20/65)
+22/06/26 09:47:46 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:47:46 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 09:47:47 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:47:47 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000020_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000020
+22/06/26 09:47:47 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000020_0: Committed
+22/06/26 09:47:47 INFO Executor: Finished task 20.0 in stage 1.0 (TID 85). 1416 bytes result sent to driver
+22/06/26 09:47:47 INFO TaskSetManager: Starting task 21.0 in stage 1.0 (TID 86, localhost, executor driver, partition 21, ANY, 7662 bytes)
+22/06/26 09:47:47 INFO Executor: Running task 21.0 in stage 1.0 (TID 86)
+22/06/26 09:47:47 INFO TaskSetManager: Finished task 20.0 in stage 1.0 (TID 85) in 808 ms on localhost (executor driver) (21/65)
+22/06/26 09:47:47 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:47:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 09:47:47 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:47:47 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000021_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000021
+22/06/26 09:47:47 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000021_0: Committed
+22/06/26 09:47:47 INFO Executor: Finished task 21.0 in stage 1.0 (TID 86). 1459 bytes result sent to driver
+22/06/26 09:47:47 INFO TaskSetManager: Starting task 22.0 in stage 1.0 (TID 87, localhost, executor driver, partition 22, ANY, 7662 bytes)
+22/06/26 09:47:47 INFO Executor: Running task 22.0 in stage 1.0 (TID 87)
+22/06/26 09:47:47 INFO TaskSetManager: Finished task 21.0 in stage 1.0 (TID 86) in 676 ms on localhost (executor driver) (22/65)
+22/06/26 09:47:47 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:47:47 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+22/06/26 09:47:50 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:47:51 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000022_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000022
+22/06/26 09:47:51 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000022_0: Committed
+22/06/26 09:47:51 INFO Executor: Finished task 22.0 in stage 1.0 (TID 87). 1459 bytes result sent to driver
+22/06/26 09:47:51 INFO TaskSetManager: Starting task 23.0 in stage 1.0 (TID 88, localhost, executor driver, partition 23, ANY, 7662 bytes)
+22/06/26 09:47:51 INFO Executor: Running task 23.0 in stage 1.0 (TID 88)
+22/06/26 09:47:51 INFO TaskSetManager: Finished task 22.0 in stage 1.0 (TID 87) in 3287 ms on localhost (executor driver) (23/65)
+22/06/26 09:47:51 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:47:51 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 09:47:52 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:47:52 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000023_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000023
+22/06/26 09:47:52 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000023_0: Committed
+22/06/26 09:47:52 INFO Executor: Finished task 23.0 in stage 1.0 (TID 88). 1502 bytes result sent to driver
+22/06/26 09:47:52 INFO TaskSetManager: Starting task 24.0 in stage 1.0 (TID 89, localhost, executor driver, partition 24, ANY, 7662 bytes)
+22/06/26 09:47:52 INFO Executor: Running task 24.0 in stage 1.0 (TID 89)
+22/06/26 09:47:52 INFO TaskSetManager: Finished task 23.0 in stage 1.0 (TID 88) in 1257 ms on localhost (executor driver) (24/65)
+22/06/26 09:47:52 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:47:52 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 09:47:53 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:47:53 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000024_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000024
+22/06/26 09:47:53 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000024_0: Committed
+22/06/26 09:47:53 INFO Executor: Finished task 24.0 in stage 1.0 (TID 89). 1459 bytes result sent to driver
+22/06/26 09:47:53 INFO TaskSetManager: Starting task 25.0 in stage 1.0 (TID 90, localhost, executor driver, partition 25, ANY, 7662 bytes)
+22/06/26 09:47:53 INFO Executor: Running task 25.0 in stage 1.0 (TID 90)
+22/06/26 09:47:53 INFO TaskSetManager: Finished task 24.0 in stage 1.0 (TID 89) in 1013 ms on localhost (executor driver) (25/65)
+22/06/26 09:47:53 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:47:53 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+22/06/26 09:47:54 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:47:54 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000025_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000025
+22/06/26 09:47:54 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000025_0: Committed
+22/06/26 09:47:54 INFO Executor: Finished task 25.0 in stage 1.0 (TID 90). 1459 bytes result sent to driver
+22/06/26 09:47:54 INFO TaskSetManager: Starting task 26.0 in stage 1.0 (TID 91, localhost, executor driver, partition 26, ANY, 7662 bytes)
+22/06/26 09:47:54 INFO Executor: Running task 26.0 in stage 1.0 (TID 91)
+22/06/26 09:47:54 INFO TaskSetManager: Finished task 25.0 in stage 1.0 (TID 90) in 758 ms on localhost (executor driver) (26/65)
+22/06/26 09:47:54 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:47:54 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+22/06/26 09:47:55 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:47:55 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000026_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000026
+22/06/26 09:47:55 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000026_0: Committed
+22/06/26 09:47:55 INFO Executor: Finished task 26.0 in stage 1.0 (TID 91). 1459 bytes result sent to driver
+22/06/26 09:47:55 INFO TaskSetManager: Starting task 27.0 in stage 1.0 (TID 92, localhost, executor driver, partition 27, ANY, 7662 bytes)
+22/06/26 09:47:55 INFO Executor: Running task 27.0 in stage 1.0 (TID 92)
+22/06/26 09:47:55 INFO TaskSetManager: Finished task 26.0 in stage 1.0 (TID 91) in 1136 ms on localhost (executor driver) (27/65)
+22/06/26 09:47:55 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:47:55 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+22/06/26 09:47:56 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:47:56 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000027_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000027
+22/06/26 09:47:56 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000027_0: Committed
+22/06/26 09:47:56 INFO Executor: Finished task 27.0 in stage 1.0 (TID 92). 1459 bytes result sent to driver
+22/06/26 09:47:56 INFO TaskSetManager: Starting task 28.0 in stage 1.0 (TID 93, localhost, executor driver, partition 28, ANY, 7662 bytes)
+22/06/26 09:47:56 INFO Executor: Running task 28.0 in stage 1.0 (TID 93)
+22/06/26 09:47:56 INFO TaskSetManager: Finished task 27.0 in stage 1.0 (TID 92) in 1013 ms on localhost (executor driver) (28/65)
+22/06/26 09:47:56 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:47:56 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+22/06/26 09:47:57 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:47:57 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000028_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000028
+22/06/26 09:47:57 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000028_0: Committed
+22/06/26 09:47:57 INFO Executor: Finished task 28.0 in stage 1.0 (TID 93). 1459 bytes result sent to driver
+22/06/26 09:47:57 INFO TaskSetManager: Starting task 29.0 in stage 1.0 (TID 94, localhost, executor driver, partition 29, ANY, 7662 bytes)
+22/06/26 09:47:57 INFO Executor: Running task 29.0 in stage 1.0 (TID 94)
+22/06/26 09:47:57 INFO TaskSetManager: Finished task 28.0 in stage 1.0 (TID 93) in 1022 ms on localhost (executor driver) (29/65)
+22/06/26 09:47:57 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:47:57 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 09:47:58 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:47:58 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000029_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000029
+22/06/26 09:47:58 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000029_0: Committed
+22/06/26 09:47:58 INFO Executor: Finished task 29.0 in stage 1.0 (TID 94). 1459 bytes result sent to driver
+22/06/26 09:47:58 INFO TaskSetManager: Starting task 30.0 in stage 1.0 (TID 95, localhost, executor driver, partition 30, ANY, 7662 bytes)
+22/06/26 09:47:58 INFO Executor: Running task 30.0 in stage 1.0 (TID 95)
+22/06/26 09:47:58 INFO TaskSetManager: Finished task 29.0 in stage 1.0 (TID 94) in 1312 ms on localhost (executor driver) (30/65)
+22/06/26 09:47:58 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:47:58 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 09:47:59 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:47:59 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000030_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000030
+22/06/26 09:47:59 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000030_0: Committed
+22/06/26 09:47:59 INFO Executor: Finished task 30.0 in stage 1.0 (TID 95). 1459 bytes result sent to driver
+22/06/26 09:47:59 INFO TaskSetManager: Starting task 31.0 in stage 1.0 (TID 96, localhost, executor driver, partition 31, ANY, 7662 bytes)
+22/06/26 09:47:59 INFO Executor: Running task 31.0 in stage 1.0 (TID 96)
+22/06/26 09:47:59 INFO TaskSetManager: Finished task 30.0 in stage 1.0 (TID 95) in 1336 ms on localhost (executor driver) (31/65)
+22/06/26 09:47:59 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:47:59 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 09:48:01 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:48:01 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000031_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000031
+22/06/26 09:48:01 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000031_0: Committed
+22/06/26 09:48:01 INFO Executor: Finished task 31.0 in stage 1.0 (TID 96). 1502 bytes result sent to driver
+22/06/26 09:48:01 INFO TaskSetManager: Starting task 32.0 in stage 1.0 (TID 97, localhost, executor driver, partition 32, ANY, 7662 bytes)
+22/06/26 09:48:01 INFO Executor: Running task 32.0 in stage 1.0 (TID 97)
+22/06/26 09:48:01 INFO TaskSetManager: Finished task 31.0 in stage 1.0 (TID 96) in 1505 ms on localhost (executor driver) (32/65)
+22/06/26 09:48:01 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:48:01 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 09:48:06 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:48:07 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000032_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000032
+22/06/26 09:48:07 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000032_0: Committed
+22/06/26 09:48:07 INFO Executor: Finished task 32.0 in stage 1.0 (TID 97). 1459 bytes result sent to driver
+22/06/26 09:48:07 INFO TaskSetManager: Starting task 33.0 in stage 1.0 (TID 98, localhost, executor driver, partition 33, ANY, 7662 bytes)
+22/06/26 09:48:07 INFO TaskSetManager: Finished task 32.0 in stage 1.0 (TID 97) in 5676 ms on localhost (executor driver) (33/65)
+22/06/26 09:48:07 INFO Executor: Running task 33.0 in stage 1.0 (TID 98)
+22/06/26 09:48:07 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:48:07 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 09:48:07 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:48:07 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000033_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000033
+22/06/26 09:48:07 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000033_0: Committed
+22/06/26 09:48:07 INFO Executor: Finished task 33.0 in stage 1.0 (TID 98). 1459 bytes result sent to driver
+22/06/26 09:48:07 INFO TaskSetManager: Starting task 34.0 in stage 1.0 (TID 99, localhost, executor driver, partition 34, ANY, 7662 bytes)
+22/06/26 09:48:07 INFO Executor: Running task 34.0 in stage 1.0 (TID 99)
+22/06/26 09:48:07 INFO TaskSetManager: Finished task 33.0 in stage 1.0 (TID 98) in 654 ms on localhost (executor driver) (34/65)
+22/06/26 09:48:07 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:48:07 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+22/06/26 09:48:08 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:48:08 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000034_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000034
+22/06/26 09:48:08 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000034_0: Committed
+22/06/26 09:48:08 INFO Executor: Finished task 34.0 in stage 1.0 (TID 99). 1416 bytes result sent to driver
+22/06/26 09:48:08 INFO TaskSetManager: Starting task 35.0 in stage 1.0 (TID 100, localhost, executor driver, partition 35, ANY, 7662 bytes)
+22/06/26 09:48:08 INFO Executor: Running task 35.0 in stage 1.0 (TID 100)
+22/06/26 09:48:08 INFO TaskSetManager: Finished task 34.0 in stage 1.0 (TID 99) in 785 ms on localhost (executor driver) (35/65)
+22/06/26 09:48:08 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:48:08 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+22/06/26 09:48:09 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:48:09 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000035_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000035
+22/06/26 09:48:09 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000035_0: Committed
+22/06/26 09:48:09 INFO Executor: Finished task 35.0 in stage 1.0 (TID 100). 1459 bytes result sent to driver
+22/06/26 09:48:09 INFO TaskSetManager: Starting task 36.0 in stage 1.0 (TID 101, localhost, executor driver, partition 36, ANY, 7662 bytes)
+22/06/26 09:48:09 INFO Executor: Running task 36.0 in stage 1.0 (TID 101)
+22/06/26 09:48:09 INFO TaskSetManager: Finished task 35.0 in stage 1.0 (TID 100) in 1152 ms on localhost (executor driver) (36/65)
+22/06/26 09:48:09 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:48:09 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+22/06/26 09:48:10 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:48:10 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000036_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000036
+22/06/26 09:48:10 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000036_0: Committed
+22/06/26 09:48:10 INFO Executor: Finished task 36.0 in stage 1.0 (TID 101). 1459 bytes result sent to driver
+22/06/26 09:48:10 INFO TaskSetManager: Starting task 37.0 in stage 1.0 (TID 102, localhost, executor driver, partition 37, ANY, 7662 bytes)
+22/06/26 09:48:10 INFO Executor: Running task 37.0 in stage 1.0 (TID 102)
+22/06/26 09:48:10 INFO TaskSetManager: Finished task 36.0 in stage 1.0 (TID 101) in 1051 ms on localhost (executor driver) (37/65)
+22/06/26 09:48:10 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:48:10 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 09:48:11 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:48:11 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000037_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000037
+22/06/26 09:48:11 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000037_0: Committed
+22/06/26 09:48:11 INFO Executor: Finished task 37.0 in stage 1.0 (TID 102). 1459 bytes result sent to driver
+22/06/26 09:48:11 INFO TaskSetManager: Starting task 38.0 in stage 1.0 (TID 103, localhost, executor driver, partition 38, ANY, 7662 bytes)
+22/06/26 09:48:11 INFO Executor: Running task 38.0 in stage 1.0 (TID 103)
+22/06/26 09:48:11 INFO TaskSetManager: Finished task 37.0 in stage 1.0 (TID 102) in 787 ms on localhost (executor driver) (38/65)
+22/06/26 09:48:11 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:48:11 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 09:48:12 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:48:12 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000038_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000038
+22/06/26 09:48:12 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000038_0: Committed
+22/06/26 09:48:12 INFO Executor: Finished task 38.0 in stage 1.0 (TID 103). 1502 bytes result sent to driver
+22/06/26 09:48:12 INFO TaskSetManager: Starting task 39.0 in stage 1.0 (TID 104, localhost, executor driver, partition 39, ANY, 7662 bytes)
+22/06/26 09:48:12 INFO Executor: Running task 39.0 in stage 1.0 (TID 104)
+22/06/26 09:48:12 INFO TaskSetManager: Finished task 38.0 in stage 1.0 (TID 103) in 762 ms on localhost (executor driver) (39/65)
+22/06/26 09:48:12 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:48:12 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 09:48:13 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:48:13 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000039_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000039
+22/06/26 09:48:13 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000039_0: Committed
+22/06/26 09:48:13 INFO Executor: Finished task 39.0 in stage 1.0 (TID 104). 1459 bytes result sent to driver
+22/06/26 09:48:13 INFO TaskSetManager: Starting task 40.0 in stage 1.0 (TID 105, localhost, executor driver, partition 40, ANY, 7662 bytes)
+22/06/26 09:48:13 INFO Executor: Running task 40.0 in stage 1.0 (TID 105)
+22/06/26 09:48:13 INFO TaskSetManager: Finished task 39.0 in stage 1.0 (TID 104) in 802 ms on localhost (executor driver) (40/65)
+22/06/26 09:48:13 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:48:13 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 09:48:13 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:48:14 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000040_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000040
+22/06/26 09:48:14 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000040_0: Committed
+22/06/26 09:48:14 INFO Executor: Finished task 40.0 in stage 1.0 (TID 105). 1502 bytes result sent to driver
+22/06/26 09:48:14 INFO TaskSetManager: Starting task 41.0 in stage 1.0 (TID 106, localhost, executor driver, partition 41, ANY, 7662 bytes)
+22/06/26 09:48:14 INFO Executor: Running task 41.0 in stage 1.0 (TID 106)
+22/06/26 09:48:14 INFO TaskSetManager: Finished task 40.0 in stage 1.0 (TID 105) in 938 ms on localhost (executor driver) (41/65)
+22/06/26 09:48:14 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:48:14 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 09:48:14 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:48:14 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000041_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000041
+22/06/26 09:48:14 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000041_0: Committed
+22/06/26 09:48:14 INFO Executor: Finished task 41.0 in stage 1.0 (TID 106). 1416 bytes result sent to driver
+22/06/26 09:48:14 INFO TaskSetManager: Starting task 42.0 in stage 1.0 (TID 107, localhost, executor driver, partition 42, ANY, 7662 bytes)
+22/06/26 09:48:14 INFO Executor: Running task 42.0 in stage 1.0 (TID 107)
+22/06/26 09:48:14 INFO TaskSetManager: Finished task 41.0 in stage 1.0 (TID 106) in 621 ms on localhost (executor driver) (42/65)
+22/06/26 09:48:14 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:48:14 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 09:48:15 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:48:15 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000042_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000042
+22/06/26 09:48:15 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000042_0: Committed
+22/06/26 09:48:15 INFO Executor: Finished task 42.0 in stage 1.0 (TID 107). 1459 bytes result sent to driver
+22/06/26 09:48:15 INFO TaskSetManager: Starting task 43.0 in stage 1.0 (TID 108, localhost, executor driver, partition 43, ANY, 7662 bytes)
+22/06/26 09:48:15 INFO Executor: Running task 43.0 in stage 1.0 (TID 108)
+22/06/26 09:48:15 INFO TaskSetManager: Finished task 42.0 in stage 1.0 (TID 107) in 894 ms on localhost (executor driver) (43/65)
+22/06/26 09:48:15 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:48:15 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 09:48:16 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:48:16 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000043_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000043
+22/06/26 09:48:16 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000043_0: Committed
+22/06/26 09:48:16 INFO Executor: Finished task 43.0 in stage 1.0 (TID 108). 1459 bytes result sent to driver
+22/06/26 09:48:16 INFO TaskSetManager: Starting task 44.0 in stage 1.0 (TID 109, localhost, executor driver, partition 44, ANY, 7662 bytes)
+22/06/26 09:48:16 INFO Executor: Running task 44.0 in stage 1.0 (TID 109)
+22/06/26 09:48:16 INFO TaskSetManager: Finished task 43.0 in stage 1.0 (TID 108) in 1216 ms on localhost (executor driver) (44/65)
+22/06/26 09:48:16 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:48:16 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 09:48:17 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:48:17 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000044_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000044
+22/06/26 09:48:17 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000044_0: Committed
+22/06/26 09:48:17 INFO Executor: Finished task 44.0 in stage 1.0 (TID 109). 1416 bytes result sent to driver
+22/06/26 09:48:17 INFO TaskSetManager: Starting task 45.0 in stage 1.0 (TID 110, localhost, executor driver, partition 45, ANY, 7662 bytes)
+22/06/26 09:48:17 INFO TaskSetManager: Finished task 44.0 in stage 1.0 (TID 109) in 716 ms on localhost (executor driver) (45/65)
+22/06/26 09:48:17 INFO Executor: Running task 45.0 in stage 1.0 (TID 110)
+22/06/26 09:48:17 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:48:17 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 09:48:18 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:48:18 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000045_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000045
+22/06/26 09:48:18 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000045_0: Committed
+22/06/26 09:48:18 INFO Executor: Finished task 45.0 in stage 1.0 (TID 110). 1459 bytes result sent to driver
+22/06/26 09:48:18 INFO TaskSetManager: Starting task 46.0 in stage 1.0 (TID 111, localhost, executor driver, partition 46, ANY, 7662 bytes)
+22/06/26 09:48:18 INFO Executor: Running task 46.0 in stage 1.0 (TID 111)
+22/06/26 09:48:18 INFO TaskSetManager: Finished task 45.0 in stage 1.0 (TID 110) in 1073 ms on localhost (executor driver) (46/65)
+22/06/26 09:48:18 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:48:18 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 09:48:19 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:48:19 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000046_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000046
+22/06/26 09:48:19 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000046_0: Committed
+22/06/26 09:48:19 INFO Executor: Finished task 46.0 in stage 1.0 (TID 111). 1459 bytes result sent to driver
+22/06/26 09:48:19 INFO TaskSetManager: Starting task 47.0 in stage 1.0 (TID 112, localhost, executor driver, partition 47, ANY, 7662 bytes)
+22/06/26 09:48:19 INFO Executor: Running task 47.0 in stage 1.0 (TID 112)
+22/06/26 09:48:19 INFO TaskSetManager: Finished task 46.0 in stage 1.0 (TID 111) in 1030 ms on localhost (executor driver) (47/65)
+22/06/26 09:48:19 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:48:19 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 09:48:20 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:48:20 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000047_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000047
+22/06/26 09:48:20 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000047_0: Committed
+22/06/26 09:48:20 INFO Executor: Finished task 47.0 in stage 1.0 (TID 112). 1459 bytes result sent to driver
+22/06/26 09:48:20 INFO TaskSetManager: Starting task 48.0 in stage 1.0 (TID 113, localhost, executor driver, partition 48, ANY, 7662 bytes)
+22/06/26 09:48:20 INFO Executor: Running task 48.0 in stage 1.0 (TID 113)
+22/06/26 09:48:20 INFO TaskSetManager: Finished task 47.0 in stage 1.0 (TID 112) in 694 ms on localhost (executor driver) (48/65)
+22/06/26 09:48:20 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:48:20 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 09:48:20 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:48:20 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000048_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000048
+22/06/26 09:48:20 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000048_0: Committed
+22/06/26 09:48:20 INFO Executor: Finished task 48.0 in stage 1.0 (TID 113). 1459 bytes result sent to driver
+22/06/26 09:48:20 INFO TaskSetManager: Starting task 49.0 in stage 1.0 (TID 114, localhost, executor driver, partition 49, ANY, 7662 bytes)
+22/06/26 09:48:20 INFO Executor: Running task 49.0 in stage 1.0 (TID 114)
+22/06/26 09:48:20 INFO TaskSetManager: Finished task 48.0 in stage 1.0 (TID 113) in 618 ms on localhost (executor driver) (49/65)
+22/06/26 09:48:20 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:48:20 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 09:48:21 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:48:21 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000049_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000049
+22/06/26 09:48:21 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000049_0: Committed
+22/06/26 09:48:21 INFO Executor: Finished task 49.0 in stage 1.0 (TID 114). 1459 bytes result sent to driver
+22/06/26 09:48:21 INFO TaskSetManager: Starting task 50.0 in stage 1.0 (TID 115, localhost, executor driver, partition 50, ANY, 7662 bytes)
+22/06/26 09:48:21 INFO Executor: Running task 50.0 in stage 1.0 (TID 115)
+22/06/26 09:48:21 INFO TaskSetManager: Finished task 49.0 in stage 1.0 (TID 114) in 940 ms on localhost (executor driver) (50/65)
+22/06/26 09:48:21 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:48:21 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 09:48:25 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:48:25 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000050_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000050
+22/06/26 09:48:25 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000050_0: Committed
+22/06/26 09:48:25 INFO Executor: Finished task 50.0 in stage 1.0 (TID 115). 1459 bytes result sent to driver
+22/06/26 09:48:25 INFO TaskSetManager: Starting task 51.0 in stage 1.0 (TID 116, localhost, executor driver, partition 51, ANY, 7662 bytes)
+22/06/26 09:48:25 INFO Executor: Running task 51.0 in stage 1.0 (TID 116)
+22/06/26 09:48:25 INFO TaskSetManager: Finished task 50.0 in stage 1.0 (TID 115) in 3520 ms on localhost (executor driver) (51/65)
+22/06/26 09:48:25 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:48:25 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 09:48:26 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:48:26 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000051_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000051
+22/06/26 09:48:26 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000051_0: Committed
+22/06/26 09:48:26 INFO Executor: Finished task 51.0 in stage 1.0 (TID 116). 1459 bytes result sent to driver
+22/06/26 09:48:26 INFO TaskSetManager: Starting task 52.0 in stage 1.0 (TID 117, localhost, executor driver, partition 52, ANY, 7662 bytes)
+22/06/26 09:48:26 INFO Executor: Running task 52.0 in stage 1.0 (TID 117)
+22/06/26 09:48:26 INFO TaskSetManager: Finished task 51.0 in stage 1.0 (TID 116) in 1022 ms on localhost (executor driver) (52/65)
+22/06/26 09:48:26 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:48:26 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 09:48:27 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:48:27 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000052_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000052
+22/06/26 09:48:27 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000052_0: Committed
+22/06/26 09:48:27 INFO Executor: Finished task 52.0 in stage 1.0 (TID 117). 1459 bytes result sent to driver
+22/06/26 09:48:27 INFO TaskSetManager: Starting task 53.0 in stage 1.0 (TID 118, localhost, executor driver, partition 53, ANY, 7662 bytes)
+22/06/26 09:48:27 INFO Executor: Running task 53.0 in stage 1.0 (TID 118)
+22/06/26 09:48:27 INFO TaskSetManager: Finished task 52.0 in stage 1.0 (TID 117) in 1192 ms on localhost (executor driver) (53/65)
+22/06/26 09:48:27 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:48:27 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 09:48:28 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:48:28 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000053_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000053
+22/06/26 09:48:28 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000053_0: Committed
+22/06/26 09:48:28 INFO Executor: Finished task 53.0 in stage 1.0 (TID 118). 1459 bytes result sent to driver
+22/06/26 09:48:28 INFO TaskSetManager: Starting task 54.0 in stage 1.0 (TID 119, localhost, executor driver, partition 54, ANY, 7662 bytes)
+22/06/26 09:48:28 INFO Executor: Running task 54.0 in stage 1.0 (TID 119)
+22/06/26 09:48:28 INFO TaskSetManager: Finished task 53.0 in stage 1.0 (TID 118) in 870 ms on localhost (executor driver) (54/65)
+22/06/26 09:48:28 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:48:28 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 09:48:29 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:48:29 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000054_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000054
+22/06/26 09:48:29 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000054_0: Committed
+22/06/26 09:48:29 INFO Executor: Finished task 54.0 in stage 1.0 (TID 119). 1502 bytes result sent to driver
+22/06/26 09:48:29 INFO TaskSetManager: Starting task 55.0 in stage 1.0 (TID 120, localhost, executor driver, partition 55, ANY, 7662 bytes)
+22/06/26 09:48:29 INFO Executor: Running task 55.0 in stage 1.0 (TID 120)
+22/06/26 09:48:29 INFO TaskSetManager: Finished task 54.0 in stage 1.0 (TID 119) in 966 ms on localhost (executor driver) (55/65)
+22/06/26 09:48:29 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:48:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 09:48:30 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:48:30 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000055_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000055
+22/06/26 09:48:30 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000055_0: Committed
+22/06/26 09:48:30 INFO Executor: Finished task 55.0 in stage 1.0 (TID 120). 1459 bytes result sent to driver
+22/06/26 09:48:30 INFO TaskSetManager: Starting task 56.0 in stage 1.0 (TID 121, localhost, executor driver, partition 56, ANY, 7662 bytes)
+22/06/26 09:48:30 INFO Executor: Running task 56.0 in stage 1.0 (TID 121)
+22/06/26 09:48:30 INFO TaskSetManager: Finished task 55.0 in stage 1.0 (TID 120) in 1166 ms on localhost (executor driver) (56/65)
+22/06/26 09:48:30 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:48:30 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 09:48:31 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:48:31 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000056_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000056
+22/06/26 09:48:31 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000056_0: Committed
+22/06/26 09:48:31 INFO Executor: Finished task 56.0 in stage 1.0 (TID 121). 1459 bytes result sent to driver
+22/06/26 09:48:31 INFO TaskSetManager: Starting task 57.0 in stage 1.0 (TID 122, localhost, executor driver, partition 57, ANY, 7662 bytes)
+22/06/26 09:48:31 INFO Executor: Running task 57.0 in stage 1.0 (TID 122)
+22/06/26 09:48:31 INFO TaskSetManager: Finished task 56.0 in stage 1.0 (TID 121) in 900 ms on localhost (executor driver) (57/65)
+22/06/26 09:48:31 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:48:31 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 09:48:32 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:48:32 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000057_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000057
+22/06/26 09:48:32 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000057_0: Committed
+22/06/26 09:48:32 INFO Executor: Finished task 57.0 in stage 1.0 (TID 122). 1459 bytes result sent to driver
+22/06/26 09:48:32 INFO TaskSetManager: Starting task 58.0 in stage 1.0 (TID 123, localhost, executor driver, partition 58, ANY, 7662 bytes)
+22/06/26 09:48:32 INFO Executor: Running task 58.0 in stage 1.0 (TID 123)
+22/06/26 09:48:32 INFO TaskSetManager: Finished task 57.0 in stage 1.0 (TID 122) in 786 ms on localhost (executor driver) (58/65)
+22/06/26 09:48:32 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:48:32 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 09:48:33 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:48:33 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000058_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000058
+22/06/26 09:48:33 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000058_0: Committed
+22/06/26 09:48:33 INFO Executor: Finished task 58.0 in stage 1.0 (TID 123). 1459 bytes result sent to driver
+22/06/26 09:48:33 INFO TaskSetManager: Starting task 59.0 in stage 1.0 (TID 124, localhost, executor driver, partition 59, ANY, 7662 bytes)
+22/06/26 09:48:33 INFO Executor: Running task 59.0 in stage 1.0 (TID 124)
+22/06/26 09:48:33 INFO TaskSetManager: Finished task 58.0 in stage 1.0 (TID 123) in 944 ms on localhost (executor driver) (59/65)
+22/06/26 09:48:33 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:48:33 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 09:48:33 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:48:33 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000059_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000059
+22/06/26 09:48:33 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000059_0: Committed
+22/06/26 09:48:33 INFO Executor: Finished task 59.0 in stage 1.0 (TID 124). 1459 bytes result sent to driver
+22/06/26 09:48:33 INFO TaskSetManager: Starting task 60.0 in stage 1.0 (TID 125, localhost, executor driver, partition 60, ANY, 7662 bytes)
+22/06/26 09:48:33 INFO Executor: Running task 60.0 in stage 1.0 (TID 125)
+22/06/26 09:48:33 INFO TaskSetManager: Finished task 59.0 in stage 1.0 (TID 124) in 538 ms on localhost (executor driver) (60/65)
+22/06/26 09:48:33 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:48:33 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 09:48:34 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:48:34 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000060_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000060
+22/06/26 09:48:34 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000060_0: Committed
+22/06/26 09:48:34 INFO Executor: Finished task 60.0 in stage 1.0 (TID 125). 1502 bytes result sent to driver
+22/06/26 09:48:34 INFO TaskSetManager: Starting task 61.0 in stage 1.0 (TID 126, localhost, executor driver, partition 61, ANY, 7662 bytes)
+22/06/26 09:48:34 INFO Executor: Running task 61.0 in stage 1.0 (TID 126)
+22/06/26 09:48:34 INFO TaskSetManager: Finished task 60.0 in stage 1.0 (TID 125) in 953 ms on localhost (executor driver) (61/65)
+22/06/26 09:48:34 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:48:34 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 09:48:35 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:48:35 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000061_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000061
+22/06/26 09:48:35 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000061_0: Committed
+22/06/26 09:48:35 INFO Executor: Finished task 61.0 in stage 1.0 (TID 126). 1459 bytes result sent to driver
+22/06/26 09:48:35 INFO TaskSetManager: Starting task 62.0 in stage 1.0 (TID 127, localhost, executor driver, partition 62, ANY, 7662 bytes)
+22/06/26 09:48:35 INFO Executor: Running task 62.0 in stage 1.0 (TID 127)
+22/06/26 09:48:35 INFO TaskSetManager: Finished task 61.0 in stage 1.0 (TID 126) in 511 ms on localhost (executor driver) (62/65)
+22/06/26 09:48:35 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:48:35 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 09:48:35 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:48:35 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000062_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000062
+22/06/26 09:48:35 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000062_0: Committed
+22/06/26 09:48:35 INFO Executor: Finished task 62.0 in stage 1.0 (TID 127). 1459 bytes result sent to driver
+22/06/26 09:48:35 INFO TaskSetManager: Starting task 63.0 in stage 1.0 (TID 128, localhost, executor driver, partition 63, ANY, 7662 bytes)
+22/06/26 09:48:35 INFO Executor: Running task 63.0 in stage 1.0 (TID 128)
+22/06/26 09:48:35 INFO TaskSetManager: Finished task 62.0 in stage 1.0 (TID 127) in 687 ms on localhost (executor driver) (63/65)
+22/06/26 09:48:35 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:48:35 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+22/06/26 09:48:36 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:48:36 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000063_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000063
+22/06/26 09:48:36 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000063_0: Committed
+22/06/26 09:48:36 INFO Executor: Finished task 63.0 in stage 1.0 (TID 128). 1459 bytes result sent to driver
+22/06/26 09:48:36 INFO TaskSetManager: Starting task 64.0 in stage 1.0 (TID 129, localhost, executor driver, partition 64, ANY, 7662 bytes)
+22/06/26 09:48:36 INFO Executor: Running task 64.0 in stage 1.0 (TID 129)
+22/06/26 09:48:36 INFO TaskSetManager: Finished task 63.0 in stage 1.0 (TID 128) in 865 ms on localhost (executor driver) (64/65)
+22/06/26 09:48:36 INFO ShuffleBlockFetcherIterator: Getting 65 non-empty blocks including 65 local blocks and 0 remote blocks
+22/06/26 09:48:36 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 09:48:37 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 09:48:37 INFO FileOutputCommitter: Saved output of task 'attempt_20220626094504_0006_m_000064_0' to file:/E:/Daima/java/IDEA/pagerank/SparkDemo_wordcount_scala/output/_temporary/0/task_20220626094504_0006_m_000064
+22/06/26 09:48:37 INFO SparkHadoopMapRedUtil: attempt_20220626094504_0006_m_000064_0: Committed
+22/06/26 09:48:37 INFO Executor: Finished task 64.0 in stage 1.0 (TID 129). 1545 bytes result sent to driver
+22/06/26 09:48:37 INFO TaskSetManager: Finished task 64.0 in stage 1.0 (TID 129) in 1229 ms on localhost (executor driver) (65/65)
+22/06/26 09:48:37 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+22/06/26 09:48:37 INFO DAGScheduler: ResultStage 1 (runJob at SparkHadoopWriter.scala:78) finished in 77.162 s
+22/06/26 09:48:37 INFO DAGScheduler: Job 0 finished: runJob at SparkHadoopWriter.scala:78, took 213.186085 s
+22/06/26 09:48:38 INFO SparkHadoopWriter: Job job_20220626094504_0006 committed.
+22/06/26 09:48:38 INFO SparkUI: Stopped Spark web UI at http://192.168.101.23:4040
+22/06/26 09:48:38 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+22/06/26 09:48:38 INFO MemoryStore: MemoryStore cleared
+22/06/26 09:48:38 INFO BlockManager: BlockManager stopped
+22/06/26 09:48:38 INFO BlockManagerMaster: BlockManagerMaster stopped
+22/06/26 09:48:38 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+22/06/26 09:48:38 INFO SparkContext: Successfully stopped SparkContext
+22/06/26 09:48:38 INFO ShutdownHookManager: Shutdown hook called
+22/06/26 09:48:38 INFO ShutdownHookManager: Deleting directory C:\Users\15151\AppData\Local\Temp\spark-68f05416-5c7c-4aed-974b-b7b56a67a12a
+
+进程已结束,退出代码0

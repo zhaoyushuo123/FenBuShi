@@ -1,0 +1,406 @@
+ubuntu@10-24-13-2:~$ ~/spark-2.4.7/bin/spark-submit --master spark://localhost:7077 --class cn.edu.ecnu.spark.example.java.wordcount.WordCount /home/ubuntu/spark-2.4.7/myapp/wordcount.jar hdfs://localhost:9000/user/ubuntu/spark_input hdfs://localhost:9000/user/ubuntu/spark_output
+22/06/26 11:42:59 WARN util.Utils: Your hostname, 10-24-13-2 resolves to a loopback address: 127.0.1.1; using 10.24.13.2 instead (on interface eth0)
+22/06/26 11:42:59 WARN util.Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+22/06/26 11:43:00 INFO spark.SparkContext: Running Spark version 2.4.7
+22/06/26 11:43:00 INFO spark.SparkContext: Submitted application: WordCountJava
+22/06/26 11:43:00 INFO spark.SecurityManager: Changing view acls to: ubuntu
+22/06/26 11:43:00 INFO spark.SecurityManager: Changing modify acls to: ubuntu
+22/06/26 11:43:00 INFO spark.SecurityManager: Changing view acls groups to: 
+22/06/26 11:43:00 INFO spark.SecurityManager: Changing modify acls groups to: 
+22/06/26 11:43:00 INFO spark.SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(ubuntu); groups with view permissions: Set(); users  with modify permissions: Set(ubuntu); groups with modify permissions: Set()
+22/06/26 11:43:00 INFO util.Utils: Successfully started service 'sparkDriver' on port 37665.
+22/06/26 11:43:00 INFO spark.SparkEnv: Registering MapOutputTracker
+22/06/26 11:43:00 INFO spark.SparkEnv: Registering BlockManagerMaster
+22/06/26 11:43:00 INFO storage.BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+22/06/26 11:43:00 INFO storage.BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+22/06/26 11:43:00 INFO storage.DiskBlockManager: Created local directory at /tmp/blockmgr-03974a0d-5c3b-452e-82df-9776fcb06b9d
+22/06/26 11:43:00 INFO memory.MemoryStore: MemoryStore started with capacity 366.3 MB
+22/06/26 11:43:00 INFO spark.SparkEnv: Registering OutputCommitCoordinator
+22/06/26 11:43:00 INFO util.log: Logging initialized @2482ms
+22/06/26 11:43:00 INFO server.Server: jetty-9.3.z-SNAPSHOT, build timestamp: unknown, git hash: unknown
+22/06/26 11:43:00 INFO server.Server: Started @2587ms
+22/06/26 11:43:00 INFO server.AbstractConnector: Started ServerConnector@680cd07e{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+22/06/26 11:43:00 INFO util.Utils: Successfully started service 'SparkUI' on port 4040.
+22/06/26 11:43:00 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@3c1e3314{/jobs,null,AVAILABLE,@Spark}
+22/06/26 11:43:00 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@61a5b4ae{/jobs/json,null,AVAILABLE,@Spark}
+22/06/26 11:43:00 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@3a71c100{/jobs/job,null,AVAILABLE,@Spark}
+22/06/26 11:43:01 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@437e951d{/jobs/job/json,null,AVAILABLE,@Spark}
+22/06/26 11:43:01 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@77b325b3{/stages,null,AVAILABLE,@Spark}
+22/06/26 11:43:01 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@63a5e46c{/stages/json,null,AVAILABLE,@Spark}
+22/06/26 11:43:01 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@7e8e8651{/stages/stage,null,AVAILABLE,@Spark}
+22/06/26 11:43:01 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@6bd51ed8{/stages/stage/json,null,AVAILABLE,@Spark}
+22/06/26 11:43:01 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@61e3a1fd{/stages/pool,null,AVAILABLE,@Spark}
+22/06/26 11:43:01 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@51abf713{/stages/pool/json,null,AVAILABLE,@Spark}
+22/06/26 11:43:01 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@eadb475{/storage,null,AVAILABLE,@Spark}
+22/06/26 11:43:01 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@4d4d48a6{/storage/json,null,AVAILABLE,@Spark}
+22/06/26 11:43:01 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@315df4bb{/storage/rdd,null,AVAILABLE,@Spark}
+22/06/26 11:43:01 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@3fc08eec{/storage/rdd/json,null,AVAILABLE,@Spark}
+22/06/26 11:43:01 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@5cad8b7d{/environment,null,AVAILABLE,@Spark}
+22/06/26 11:43:01 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@7b02e036{/environment/json,null,AVAILABLE,@Spark}
+22/06/26 11:43:01 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@25243bc1{/executors,null,AVAILABLE,@Spark}
+22/06/26 11:43:01 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1e287667{/executors/json,null,AVAILABLE,@Spark}
+22/06/26 11:43:01 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@2e6ee0bc{/executors/threadDump,null,AVAILABLE,@Spark}
+22/06/26 11:43:01 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@4201a617{/executors/threadDump/json,null,AVAILABLE,@Spark}
+22/06/26 11:43:01 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@467f77a5{/static,null,AVAILABLE,@Spark}
+22/06/26 11:43:01 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@e362c57{/,null,AVAILABLE,@Spark}
+22/06/26 11:43:01 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1c4ee95c{/api,null,AVAILABLE,@Spark}
+22/06/26 11:43:01 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@e27ba81{/jobs/job/kill,null,AVAILABLE,@Spark}
+22/06/26 11:43:01 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@54336c81{/stages/stage/kill,null,AVAILABLE,@Spark}
+22/06/26 11:43:01 INFO ui.SparkUI: Bound SparkUI to 0.0.0.0, and started at http://10.24.13.2:4040
+22/06/26 11:43:01 INFO spark.SparkContext: Added JAR file:/home/ubuntu/spark-2.4.7/myapp/wordcount.jar at spark://10.24.13.2:37665/jars/wordcount.jar with timestamp 1656214981074
+22/06/26 11:43:01 INFO executor.Executor: Starting executor ID driver on host localhost
+22/06/26 11:43:01 INFO util.Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 44505.
+22/06/26 11:43:01 INFO netty.NettyBlockTransferService: Server created on 10.24.13.2:44505
+22/06/26 11:43:01 INFO storage.BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+22/06/26 11:43:01 INFO storage.BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 10.24.13.2, 44505, None)
+22/06/26 11:43:01 INFO storage.BlockManagerMasterEndpoint: Registering block manager 10.24.13.2:44505 with 366.3 MB RAM, BlockManagerId(driver, 10.24.13.2, 44505, None)
+22/06/26 11:43:01 INFO storage.BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 10.24.13.2, 44505, None)
+22/06/26 11:43:01 INFO storage.BlockManager: Initialized BlockManager: BlockManagerId(driver, 10.24.13.2, 44505, None)
+22/06/26 11:43:01 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@f14e5bf{/metrics/json,null,AVAILABLE,@Spark}
+22/06/26 11:43:02 INFO scheduler.EventLoggingListener: Logging events to hdfs://localhost:9000/tmp/spark_history/local-1656214981173
+22/06/26 11:43:03 INFO memory.MemoryStore: Block broadcast_0 stored as values in memory (estimated size 417.9 KB, free 365.9 MB)
+22/06/26 11:43:03 INFO memory.MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 38.3 KB, free 365.9 MB)
+22/06/26 11:43:03 INFO storage.BlockManagerInfo: Added broadcast_0_piece0 in memory on 10.24.13.2:44505 (size: 38.3 KB, free: 366.3 MB)
+22/06/26 11:43:03 INFO spark.SparkContext: Created broadcast 0 from textFile at WordCount.java:24
+22/06/26 11:43:03 INFO mapred.FileInputFormat: Total input files to process : 2
+22/06/26 11:43:03 INFO Configuration.deprecation: mapred.output.dir is deprecated. Instead, use mapreduce.output.fileoutputformat.outputdir
+22/06/26 11:43:03 INFO io.HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 11:43:03 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+22/06/26 11:43:03 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+22/06/26 11:43:04 INFO spark.SparkContext: Starting job: runJob at SparkHadoopWriter.scala:78
+22/06/26 11:43:04 INFO scheduler.DAGScheduler: Registering RDD 3 (mapToPair at WordCount.java:37) as input to shuffle 0
+22/06/26 11:43:04 INFO scheduler.DAGScheduler: Got job 0 (runJob at SparkHadoopWriter.scala:78) with 18 output partitions
+22/06/26 11:43:04 INFO scheduler.DAGScheduler: Final stage: ResultStage 1 (runJob at SparkHadoopWriter.scala:78)
+22/06/26 11:43:04 INFO scheduler.DAGScheduler: Parents of final stage: List(ShuffleMapStage 0)
+22/06/26 11:43:04 INFO scheduler.DAGScheduler: Missing parents: List(ShuffleMapStage 0)
+22/06/26 11:43:04 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 0 (MapPartitionsRDD[3] at mapToPair at WordCount.java:37), which has no missing parents
+22/06/26 11:43:04 INFO memory.MemoryStore: Block broadcast_1 stored as values in memory (estimated size 6.1 KB, free 365.8 MB)
+22/06/26 11:43:04 INFO memory.MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 3.3 KB, free 365.8 MB)
+22/06/26 11:43:04 INFO storage.BlockManagerInfo: Added broadcast_1_piece0 in memory on 10.24.13.2:44505 (size: 3.3 KB, free: 366.3 MB)
+22/06/26 11:43:04 INFO spark.SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1184
+22/06/26 11:43:04 INFO scheduler.DAGScheduler: Submitting 18 missing tasks from ShuffleMapStage 0 (MapPartitionsRDD[3] at mapToPair at WordCount.java:37) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14))
+22/06/26 11:43:04 INFO scheduler.TaskSchedulerImpl: Adding task set 0.0 with 18 tasks
+22/06/26 11:43:04 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0, localhost, executor driver, partition 0, ANY, 7902 bytes)
+22/06/26 11:43:04 INFO executor.Executor: Running task 0.0 in stage 0.0 (TID 0)
+22/06/26 11:43:04 INFO executor.Executor: Fetching spark://10.24.13.2:37665/jars/wordcount.jar with timestamp 1656214981074
+22/06/26 11:43:04 INFO client.TransportClientFactory: Successfully created connection to /10.24.13.2:37665 after 34 ms (0 ms spent in bootstraps)
+22/06/26 11:43:04 INFO util.Utils: Fetching spark://10.24.13.2:37665/jars/wordcount.jar to /tmp/spark-f99764a2-ce54-4231-9bf7-43cda3ec1be6/userFiles-5d3d3daa-d403-4541-a547-96c368d339d6/fetchFileTemp7041666518375375045.tmp
+22/06/26 11:43:04 INFO executor.Executor: Adding file:/tmp/spark-f99764a2-ce54-4231-9bf7-43cda3ec1be6/userFiles-5d3d3daa-d403-4541-a547-96c368d339d6/wordcount.jar to class loader
+22/06/26 11:43:04 INFO rdd.HadoopRDD: Input split: hdfs://localhost:9000/user/ubuntu/spark_input/RELEASE:0+165
+22/06/26 11:43:04 INFO executor.Executor: Finished task 0.0 in stage 0.0 (TID 0). 1039 bytes result sent to driver
+22/06/26 11:43:04 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 0.0 (TID 1, localhost, executor driver, partition 1, ANY, 7903 bytes)
+22/06/26 11:43:04 INFO executor.Executor: Running task 1.0 in stage 0.0 (TID 1)
+22/06/26 11:43:04 INFO rdd.HadoopRDD: Input split: hdfs://localhost:9000/user/ubuntu/spark_input/pd.train:0+134217728
+22/06/26 11:43:04 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 371 ms on localhost (executor driver) (1/18)
+22/06/26 11:43:18 INFO executor.Executor: Finished task 1.0 in stage 0.0 (TID 1). 1082 bytes result sent to driver
+22/06/26 11:43:18 INFO scheduler.TaskSetManager: Starting task 2.0 in stage 0.0 (TID 2, localhost, executor driver, partition 2, ANY, 7903 bytes)
+22/06/26 11:43:18 INFO executor.Executor: Running task 2.0 in stage 0.0 (TID 2)
+22/06/26 11:43:18 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 0.0 (TID 1) in 13730 ms on localhost (executor driver) (2/18)
+22/06/26 11:43:18 INFO rdd.HadoopRDD: Input split: hdfs://localhost:9000/user/ubuntu/spark_input/pd.train:134217728+134217728
+22/06/26 11:43:31 INFO executor.Executor: Finished task 2.0 in stage 0.0 (TID 2). 1039 bytes result sent to driver
+22/06/26 11:43:31 INFO scheduler.TaskSetManager: Starting task 3.0 in stage 0.0 (TID 3, localhost, executor driver, partition 3, ANY, 7903 bytes)
+22/06/26 11:43:31 INFO executor.Executor: Running task 3.0 in stage 0.0 (TID 3)
+22/06/26 11:43:31 INFO scheduler.TaskSetManager: Finished task 2.0 in stage 0.0 (TID 2) in 13201 ms on localhost (executor driver) (3/18)
+22/06/26 11:43:31 INFO rdd.HadoopRDD: Input split: hdfs://localhost:9000/user/ubuntu/spark_input/pd.train:268435456+134217728
+22/06/26 11:43:45 INFO executor.Executor: Finished task 3.0 in stage 0.0 (TID 3). 1039 bytes result sent to driver
+22/06/26 11:43:45 INFO scheduler.TaskSetManager: Starting task 4.0 in stage 0.0 (TID 4, localhost, executor driver, partition 4, ANY, 7903 bytes)
+22/06/26 11:43:45 INFO executor.Executor: Running task 4.0 in stage 0.0 (TID 4)
+22/06/26 11:43:45 INFO rdd.HadoopRDD: Input split: hdfs://localhost:9000/user/ubuntu/spark_input/pd.train:402653184+134217728
+22/06/26 11:43:45 INFO scheduler.TaskSetManager: Finished task 3.0 in stage 0.0 (TID 3) in 13747 ms on localhost (executor driver) (4/18)
+22/06/26 11:43:59 INFO executor.Executor: Finished task 4.0 in stage 0.0 (TID 4). 1082 bytes result sent to driver
+22/06/26 11:43:59 INFO scheduler.TaskSetManager: Starting task 5.0 in stage 0.0 (TID 5, localhost, executor driver, partition 5, ANY, 7903 bytes)
+22/06/26 11:43:59 INFO scheduler.TaskSetManager: Finished task 4.0 in stage 0.0 (TID 4) in 13783 ms on localhost (executor driver) (5/18)
+22/06/26 11:43:59 INFO executor.Executor: Running task 5.0 in stage 0.0 (TID 5)
+22/06/26 11:43:59 INFO rdd.HadoopRDD: Input split: hdfs://localhost:9000/user/ubuntu/spark_input/pd.train:536870912+134217728
+22/06/26 11:44:12 INFO executor.Executor: Finished task 5.0 in stage 0.0 (TID 5). 1039 bytes result sent to driver
+22/06/26 11:44:12 INFO scheduler.TaskSetManager: Starting task 6.0 in stage 0.0 (TID 6, localhost, executor driver, partition 6, ANY, 7903 bytes)
+22/06/26 11:44:12 INFO executor.Executor: Running task 6.0 in stage 0.0 (TID 6)
+22/06/26 11:44:12 INFO scheduler.TaskSetManager: Finished task 5.0 in stage 0.0 (TID 5) in 13644 ms on localhost (executor driver) (6/18)
+22/06/26 11:44:12 INFO rdd.HadoopRDD: Input split: hdfs://localhost:9000/user/ubuntu/spark_input/pd.train:671088640+134217728
+22/06/26 11:44:26 INFO executor.Executor: Finished task 6.0 in stage 0.0 (TID 6). 1082 bytes result sent to driver
+22/06/26 11:44:26 INFO scheduler.TaskSetManager: Starting task 7.0 in stage 0.0 (TID 7, localhost, executor driver, partition 7, ANY, 7903 bytes)
+22/06/26 11:44:26 INFO executor.Executor: Running task 7.0 in stage 0.0 (TID 7)
+22/06/26 11:44:26 INFO scheduler.TaskSetManager: Finished task 6.0 in stage 0.0 (TID 6) in 13814 ms on localhost (executor driver) (7/18)
+22/06/26 11:44:26 INFO rdd.HadoopRDD: Input split: hdfs://localhost:9000/user/ubuntu/spark_input/pd.train:805306368+134217728
+22/06/26 11:44:40 INFO executor.Executor: Finished task 7.0 in stage 0.0 (TID 7). 1039 bytes result sent to driver
+22/06/26 11:44:40 INFO scheduler.TaskSetManager: Starting task 8.0 in stage 0.0 (TID 8, localhost, executor driver, partition 8, ANY, 7903 bytes)
+22/06/26 11:44:40 INFO scheduler.TaskSetManager: Finished task 7.0 in stage 0.0 (TID 7) in 13453 ms on localhost (executor driver) (8/18)
+22/06/26 11:44:40 INFO executor.Executor: Running task 8.0 in stage 0.0 (TID 8)
+22/06/26 11:44:40 INFO rdd.HadoopRDD: Input split: hdfs://localhost:9000/user/ubuntu/spark_input/pd.train:939524096+134217728
+22/06/26 11:44:53 INFO executor.Executor: Finished task 8.0 in stage 0.0 (TID 8). 1039 bytes result sent to driver
+22/06/26 11:44:53 INFO scheduler.TaskSetManager: Starting task 9.0 in stage 0.0 (TID 9, localhost, executor driver, partition 9, ANY, 7903 bytes)
+22/06/26 11:44:53 INFO scheduler.TaskSetManager: Finished task 8.0 in stage 0.0 (TID 8) in 13683 ms on localhost (executor driver) (9/18)
+22/06/26 11:44:53 INFO executor.Executor: Running task 9.0 in stage 0.0 (TID 9)
+22/06/26 11:44:53 INFO rdd.HadoopRDD: Input split: hdfs://localhost:9000/user/ubuntu/spark_input/pd.train:1073741824+134217728
+22/06/26 11:45:07 INFO executor.Executor: Finished task 9.0 in stage 0.0 (TID 9). 1039 bytes result sent to driver
+22/06/26 11:45:07 INFO scheduler.TaskSetManager: Starting task 10.0 in stage 0.0 (TID 10, localhost, executor driver, partition 10, ANY, 7903 bytes)
+22/06/26 11:45:07 INFO executor.Executor: Running task 10.0 in stage 0.0 (TID 10)
+22/06/26 11:45:07 INFO scheduler.TaskSetManager: Finished task 9.0 in stage 0.0 (TID 9) in 13402 ms on localhost (executor driver) (10/18)
+22/06/26 11:45:07 INFO rdd.HadoopRDD: Input split: hdfs://localhost:9000/user/ubuntu/spark_input/pd.train:1207959552+134217728
+22/06/26 11:45:20 INFO executor.Executor: Finished task 10.0 in stage 0.0 (TID 10). 1039 bytes result sent to driver
+22/06/26 11:45:20 INFO scheduler.TaskSetManager: Starting task 11.0 in stage 0.0 (TID 11, localhost, executor driver, partition 11, ANY, 7903 bytes)
+22/06/26 11:45:20 INFO scheduler.TaskSetManager: Finished task 10.0 in stage 0.0 (TID 10) in 13031 ms on localhost (executor driver) (11/18)
+22/06/26 11:45:20 INFO executor.Executor: Running task 11.0 in stage 0.0 (TID 11)
+22/06/26 11:45:20 INFO rdd.HadoopRDD: Input split: hdfs://localhost:9000/user/ubuntu/spark_input/pd.train:1342177280+134217728
+22/06/26 11:45:33 INFO executor.Executor: Finished task 11.0 in stage 0.0 (TID 11). 1039 bytes result sent to driver
+22/06/26 11:45:33 INFO scheduler.TaskSetManager: Starting task 12.0 in stage 0.0 (TID 12, localhost, executor driver, partition 12, ANY, 7903 bytes)
+22/06/26 11:45:33 INFO scheduler.TaskSetManager: Finished task 11.0 in stage 0.0 (TID 11) in 13330 ms on localhost (executor driver) (12/18)
+22/06/26 11:45:33 INFO executor.Executor: Running task 12.0 in stage 0.0 (TID 12)
+22/06/26 11:45:33 INFO rdd.HadoopRDD: Input split: hdfs://localhost:9000/user/ubuntu/spark_input/pd.train:1476395008+134217728
+22/06/26 11:45:47 INFO executor.Executor: Finished task 12.0 in stage 0.0 (TID 12). 1039 bytes result sent to driver
+22/06/26 11:45:47 INFO scheduler.TaskSetManager: Starting task 13.0 in stage 0.0 (TID 13, localhost, executor driver, partition 13, ANY, 7903 bytes)
+22/06/26 11:45:47 INFO executor.Executor: Running task 13.0 in stage 0.0 (TID 13)
+22/06/26 11:45:47 INFO scheduler.TaskSetManager: Finished task 12.0 in stage 0.0 (TID 12) in 13559 ms on localhost (executor driver) (13/18)
+22/06/26 11:45:47 INFO rdd.HadoopRDD: Input split: hdfs://localhost:9000/user/ubuntu/spark_input/pd.train:1610612736+134217728
+22/06/26 11:45:59 INFO executor.Executor: Finished task 13.0 in stage 0.0 (TID 13). 1039 bytes result sent to driver
+22/06/26 11:45:59 INFO scheduler.TaskSetManager: Starting task 14.0 in stage 0.0 (TID 14, localhost, executor driver, partition 14, ANY, 7903 bytes)
+22/06/26 11:45:59 INFO executor.Executor: Running task 14.0 in stage 0.0 (TID 14)
+22/06/26 11:45:59 INFO scheduler.TaskSetManager: Finished task 13.0 in stage 0.0 (TID 13) in 12959 ms on localhost (executor driver) (14/18)
+22/06/26 11:45:59 INFO rdd.HadoopRDD: Input split: hdfs://localhost:9000/user/ubuntu/spark_input/pd.train:1744830464+134217728
+22/06/26 11:46:13 INFO executor.Executor: Finished task 14.0 in stage 0.0 (TID 14). 1039 bytes result sent to driver
+22/06/26 11:46:13 INFO scheduler.TaskSetManager: Starting task 15.0 in stage 0.0 (TID 15, localhost, executor driver, partition 15, ANY, 7903 bytes)
+22/06/26 11:46:13 INFO executor.Executor: Running task 15.0 in stage 0.0 (TID 15)
+22/06/26 11:46:13 INFO scheduler.TaskSetManager: Finished task 14.0 in stage 0.0 (TID 14) in 13099 ms on localhost (executor driver) (15/18)
+22/06/26 11:46:13 INFO rdd.HadoopRDD: Input split: hdfs://localhost:9000/user/ubuntu/spark_input/pd.train:1879048192+134217728
+22/06/26 11:46:25 INFO executor.Executor: Finished task 15.0 in stage 0.0 (TID 15). 1039 bytes result sent to driver
+22/06/26 11:46:25 INFO scheduler.TaskSetManager: Starting task 16.0 in stage 0.0 (TID 16, localhost, executor driver, partition 16, ANY, 7903 bytes)
+22/06/26 11:46:25 INFO executor.Executor: Running task 16.0 in stage 0.0 (TID 16)
+22/06/26 11:46:25 INFO scheduler.TaskSetManager: Finished task 15.0 in stage 0.0 (TID 15) in 12716 ms on localhost (executor driver) (16/18)
+22/06/26 11:46:25 INFO rdd.HadoopRDD: Input split: hdfs://localhost:9000/user/ubuntu/spark_input/pd.train:2013265920+134217728
+22/06/26 11:46:38 INFO executor.Executor: Finished task 16.0 in stage 0.0 (TID 16). 1082 bytes result sent to driver
+22/06/26 11:46:38 INFO scheduler.TaskSetManager: Starting task 17.0 in stage 0.0 (TID 17, localhost, executor driver, partition 17, ANY, 7903 bytes)
+22/06/26 11:46:38 INFO executor.Executor: Running task 17.0 in stage 0.0 (TID 17)
+22/06/26 11:46:38 INFO scheduler.TaskSetManager: Finished task 16.0 in stage 0.0 (TID 16) in 12820 ms on localhost (executor driver) (17/18)
+22/06/26 11:46:38 INFO rdd.HadoopRDD: Input split: hdfs://localhost:9000/user/ubuntu/spark_input/pd.train:2147483648+26081833
+22/06/26 11:46:41 INFO executor.Executor: Finished task 17.0 in stage 0.0 (TID 17). 1039 bytes result sent to driver
+22/06/26 11:46:41 INFO scheduler.TaskSetManager: Finished task 17.0 in stage 0.0 (TID 17) in 2640 ms on localhost (executor driver) (18/18)
+22/06/26 11:46:41 INFO scheduler.DAGScheduler: ShuffleMapStage 0 (mapToPair at WordCount.java:37) finished in 217.056 s
+22/06/26 11:46:41 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+22/06/26 11:46:41 INFO scheduler.DAGScheduler: looking for newly runnable stages
+22/06/26 11:46:41 INFO scheduler.DAGScheduler: running: Set()
+22/06/26 11:46:41 INFO scheduler.DAGScheduler: waiting: Set(ResultStage 1)
+22/06/26 11:46:41 INFO scheduler.DAGScheduler: failed: Set()
+22/06/26 11:46:41 INFO scheduler.DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[7] at saveAsTextFile at WordCount.java:71), which has no missing parents
+22/06/26 11:46:41 INFO memory.MemoryStore: Block broadcast_2 stored as values in memory (estimated size 116.5 KB, free 365.7 MB)
+22/06/26 11:46:41 INFO memory.MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 42.9 KB, free 365.7 MB)
+22/06/26 11:46:41 INFO storage.BlockManagerInfo: Added broadcast_2_piece0 in memory on 10.24.13.2:44505 (size: 42.9 KB, free: 366.2 MB)
+22/06/26 11:46:41 INFO spark.SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:1184
+22/06/26 11:46:41 INFO scheduler.DAGScheduler: Submitting 18 missing tasks from ResultStage 1 (MapPartitionsRDD[7] at saveAsTextFile at WordCount.java:71) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14))
+22/06/26 11:46:41 INFO scheduler.TaskSchedulerImpl: Adding task set 1.0 with 18 tasks
+22/06/26 11:46:41 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 1.0 (TID 18, localhost, executor driver, partition 0, ANY, 7662 bytes)
+22/06/26 11:46:41 INFO executor.Executor: Running task 0.0 in stage 1.0 (TID 18)
+22/06/26 11:46:41 INFO storage.ShuffleBlockFetcherIterator: Getting 18 non-empty blocks including 18 local blocks and 0 remote blocks
+22/06/26 11:46:41 INFO storage.ShuffleBlockFetcherIterator: Started 0 remote fetches in 13 ms
+22/06/26 11:46:43 INFO storage.BlockManagerInfo: Removed broadcast_1_piece0 on 10.24.13.2:44505 in memory (size: 3.3 KB, free: 366.2 MB)
+22/06/26 11:46:53 INFO io.HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 11:46:53 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+22/06/26 11:46:53 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+22/06/26 11:46:54 INFO output.FileOutputCommitter: Saved output of task 'attempt_20220626114303_0007_m_000000_0' to hdfs://localhost:9000/user/ubuntu/spark_output/_temporary/0/task_20220626114303_0007_m_000000
+22/06/26 11:46:54 INFO mapred.SparkHadoopMapRedUtil: attempt_20220626114303_0007_m_000000_0: Committed
+22/06/26 11:46:54 INFO executor.Executor: Finished task 0.0 in stage 1.0 (TID 18). 1545 bytes result sent to driver
+22/06/26 11:46:54 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 1.0 (TID 19, localhost, executor driver, partition 1, ANY, 7662 bytes)
+22/06/26 11:46:54 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 1.0 (TID 18) in 12892 ms on localhost (executor driver) (1/18)
+22/06/26 11:46:54 INFO executor.Executor: Running task 1.0 in stage 1.0 (TID 19)
+22/06/26 11:46:54 INFO storage.ShuffleBlockFetcherIterator: Getting 18 non-empty blocks including 18 local blocks and 0 remote blocks
+22/06/26 11:46:54 INFO storage.ShuffleBlockFetcherIterator: Started 0 remote fetches in 2 ms
+22/06/26 11:47:06 INFO io.HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 11:47:06 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+22/06/26 11:47:06 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+22/06/26 11:47:06 INFO output.FileOutputCommitter: Saved output of task 'attempt_20220626114303_0007_m_000001_0' to hdfs://localhost:9000/user/ubuntu/spark_output/_temporary/0/task_20220626114303_0007_m_000001
+22/06/26 11:47:06 INFO mapred.SparkHadoopMapRedUtil: attempt_20220626114303_0007_m_000001_0: Committed
+22/06/26 11:47:06 INFO executor.Executor: Finished task 1.0 in stage 1.0 (TID 19). 1502 bytes result sent to driver
+22/06/26 11:47:06 INFO scheduler.TaskSetManager: Starting task 2.0 in stage 1.0 (TID 20, localhost, executor driver, partition 2, ANY, 7662 bytes)
+22/06/26 11:47:06 INFO executor.Executor: Running task 2.0 in stage 1.0 (TID 20)
+22/06/26 11:47:06 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 1.0 (TID 19) in 12269 ms on localhost (executor driver) (2/18)
+22/06/26 11:47:06 INFO storage.ShuffleBlockFetcherIterator: Getting 17 non-empty blocks including 17 local blocks and 0 remote blocks
+22/06/26 11:47:06 INFO storage.ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+22/06/26 11:47:22 INFO io.HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 11:47:22 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+22/06/26 11:47:22 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+22/06/26 11:47:23 INFO output.FileOutputCommitter: Saved output of task 'attempt_20220626114303_0007_m_000002_0' to hdfs://localhost:9000/user/ubuntu/spark_output/_temporary/0/task_20220626114303_0007_m_000002
+22/06/26 11:47:23 INFO mapred.SparkHadoopMapRedUtil: attempt_20220626114303_0007_m_000002_0: Committed
+22/06/26 11:47:23 INFO executor.Executor: Finished task 2.0 in stage 1.0 (TID 20). 1545 bytes result sent to driver
+22/06/26 11:47:23 INFO scheduler.TaskSetManager: Starting task 3.0 in stage 1.0 (TID 21, localhost, executor driver, partition 3, ANY, 7662 bytes)
+22/06/26 11:47:23 INFO executor.Executor: Running task 3.0 in stage 1.0 (TID 21)
+22/06/26 11:47:23 INFO scheduler.TaskSetManager: Finished task 2.0 in stage 1.0 (TID 20) in 16742 ms on localhost (executor driver) (3/18)
+22/06/26 11:47:23 INFO storage.ShuffleBlockFetcherIterator: Getting 18 non-empty blocks including 18 local blocks and 0 remote blocks
+22/06/26 11:47:23 INFO storage.ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+22/06/26 11:47:32 INFO io.HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 11:47:32 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+22/06/26 11:47:32 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+22/06/26 11:47:32 INFO output.FileOutputCommitter: Saved output of task 'attempt_20220626114303_0007_m_000003_0' to hdfs://localhost:9000/user/ubuntu/spark_output/_temporary/0/task_20220626114303_0007_m_000003
+22/06/26 11:47:32 INFO mapred.SparkHadoopMapRedUtil: attempt_20220626114303_0007_m_000003_0: Committed
+22/06/26 11:47:32 INFO executor.Executor: Finished task 3.0 in stage 1.0 (TID 21). 1502 bytes result sent to driver
+22/06/26 11:47:32 INFO scheduler.TaskSetManager: Starting task 4.0 in stage 1.0 (TID 22, localhost, executor driver, partition 4, ANY, 7662 bytes)
+22/06/26 11:47:32 INFO scheduler.TaskSetManager: Finished task 3.0 in stage 1.0 (TID 21) in 9206 ms on localhost (executor driver) (4/18)
+22/06/26 11:47:32 INFO executor.Executor: Running task 4.0 in stage 1.0 (TID 22)
+22/06/26 11:47:32 INFO storage.ShuffleBlockFetcherIterator: Getting 17 non-empty blocks including 17 local blocks and 0 remote blocks
+22/06/26 11:47:32 INFO storage.ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 11:47:45 INFO io.HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 11:47:45 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+22/06/26 11:47:45 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+22/06/26 11:47:45 INFO output.FileOutputCommitter: Saved output of task 'attempt_20220626114303_0007_m_000004_0' to hdfs://localhost:9000/user/ubuntu/spark_output/_temporary/0/task_20220626114303_0007_m_000004
+22/06/26 11:47:45 INFO mapred.SparkHadoopMapRedUtil: attempt_20220626114303_0007_m_000004_0: Committed
+22/06/26 11:47:45 INFO executor.Executor: Finished task 4.0 in stage 1.0 (TID 22). 1502 bytes result sent to driver
+22/06/26 11:47:45 INFO scheduler.TaskSetManager: Starting task 5.0 in stage 1.0 (TID 23, localhost, executor driver, partition 5, ANY, 7662 bytes)
+22/06/26 11:47:45 INFO executor.Executor: Running task 5.0 in stage 1.0 (TID 23)
+22/06/26 11:47:45 INFO scheduler.TaskSetManager: Finished task 4.0 in stage 1.0 (TID 22) in 12962 ms on localhost (executor driver) (5/18)
+22/06/26 11:47:45 INFO storage.ShuffleBlockFetcherIterator: Getting 17 non-empty blocks including 17 local blocks and 0 remote blocks
+22/06/26 11:47:45 INFO storage.ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 11:47:57 INFO io.HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 11:47:57 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+22/06/26 11:47:57 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+22/06/26 11:47:57 INFO output.FileOutputCommitter: Saved output of task 'attempt_20220626114303_0007_m_000005_0' to hdfs://localhost:9000/user/ubuntu/spark_output/_temporary/0/task_20220626114303_0007_m_000005
+22/06/26 11:47:57 INFO mapred.SparkHadoopMapRedUtil: attempt_20220626114303_0007_m_000005_0: Committed
+22/06/26 11:47:57 INFO executor.Executor: Finished task 5.0 in stage 1.0 (TID 23). 1502 bytes result sent to driver
+22/06/26 11:47:57 INFO scheduler.TaskSetManager: Starting task 6.0 in stage 1.0 (TID 24, localhost, executor driver, partition 6, ANY, 7662 bytes)
+22/06/26 11:47:57 INFO scheduler.TaskSetManager: Finished task 5.0 in stage 1.0 (TID 23) in 12492 ms on localhost (executor driver) (6/18)
+22/06/26 11:47:57 INFO executor.Executor: Running task 6.0 in stage 1.0 (TID 24)
+22/06/26 11:47:57 INFO storage.ShuffleBlockFetcherIterator: Getting 17 non-empty blocks including 17 local blocks and 0 remote blocks
+22/06/26 11:47:57 INFO storage.ShuffleBlockFetcherIterator: Started 0 remote fetches in 6 ms
+22/06/26 11:48:27 INFO io.HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 11:48:27 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+22/06/26 11:48:27 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+22/06/26 11:48:28 INFO output.FileOutputCommitter: Saved output of task 'attempt_20220626114303_0007_m_000006_0' to hdfs://localhost:9000/user/ubuntu/spark_output/_temporary/0/task_20220626114303_0007_m_000006
+22/06/26 11:48:28 INFO mapred.SparkHadoopMapRedUtil: attempt_20220626114303_0007_m_000006_0: Committed
+22/06/26 11:48:28 INFO executor.Executor: Finished task 6.0 in stage 1.0 (TID 24). 1502 bytes result sent to driver
+22/06/26 11:48:28 INFO scheduler.TaskSetManager: Starting task 7.0 in stage 1.0 (TID 25, localhost, executor driver, partition 7, ANY, 7662 bytes)
+22/06/26 11:48:28 INFO scheduler.TaskSetManager: Finished task 6.0 in stage 1.0 (TID 24) in 30301 ms on localhost (executor driver) (7/18)
+22/06/26 11:48:28 INFO executor.Executor: Running task 7.0 in stage 1.0 (TID 25)
+22/06/26 11:48:28 INFO storage.ShuffleBlockFetcherIterator: Getting 17 non-empty blocks including 17 local blocks and 0 remote blocks
+22/06/26 11:48:28 INFO storage.ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+22/06/26 11:48:39 INFO io.HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 11:48:39 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+22/06/26 11:48:39 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+22/06/26 11:48:40 INFO output.FileOutputCommitter: Saved output of task 'attempt_20220626114303_0007_m_000007_0' to hdfs://localhost:9000/user/ubuntu/spark_output/_temporary/0/task_20220626114303_0007_m_000007
+22/06/26 11:48:40 INFO mapred.SparkHadoopMapRedUtil: attempt_20220626114303_0007_m_000007_0: Committed
+22/06/26 11:48:40 INFO executor.Executor: Finished task 7.0 in stage 1.0 (TID 25). 1502 bytes result sent to driver
+22/06/26 11:48:40 INFO scheduler.TaskSetManager: Starting task 8.0 in stage 1.0 (TID 26, localhost, executor driver, partition 8, ANY, 7662 bytes)
+22/06/26 11:48:40 INFO executor.Executor: Running task 8.0 in stage 1.0 (TID 26)
+22/06/26 11:48:40 INFO scheduler.TaskSetManager: Finished task 7.0 in stage 1.0 (TID 25) in 12063 ms on localhost (executor driver) (8/18)
+22/06/26 11:48:40 INFO storage.ShuffleBlockFetcherIterator: Getting 17 non-empty blocks including 17 local blocks and 0 remote blocks
+22/06/26 11:48:40 INFO storage.ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 11:48:50 INFO io.HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 11:48:50 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+22/06/26 11:48:50 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+22/06/26 11:48:50 INFO output.FileOutputCommitter: Saved output of task 'attempt_20220626114303_0007_m_000008_0' to hdfs://localhost:9000/user/ubuntu/spark_output/_temporary/0/task_20220626114303_0007_m_000008
+22/06/26 11:48:50 INFO mapred.SparkHadoopMapRedUtil: attempt_20220626114303_0007_m_000008_0: Committed
+22/06/26 11:48:50 INFO executor.Executor: Finished task 8.0 in stage 1.0 (TID 26). 1502 bytes result sent to driver
+22/06/26 11:48:50 INFO scheduler.TaskSetManager: Starting task 9.0 in stage 1.0 (TID 27, localhost, executor driver, partition 9, ANY, 7662 bytes)
+22/06/26 11:48:50 INFO scheduler.TaskSetManager: Finished task 8.0 in stage 1.0 (TID 26) in 10285 ms on localhost (executor driver) (9/18)
+22/06/26 11:48:50 INFO executor.Executor: Running task 9.0 in stage 1.0 (TID 27)
+22/06/26 11:48:50 INFO storage.ShuffleBlockFetcherIterator: Getting 17 non-empty blocks including 17 local blocks and 0 remote blocks
+22/06/26 11:48:50 INFO storage.ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+22/06/26 11:48:55 INFO collection.ExternalAppendOnlyMap: Thread 97 spilling in-memory map of 373.2 MB to disk (1 time so far)
+22/06/26 11:48:59 INFO collection.ExternalAppendOnlyMap: Thread 97 spilling in-memory map of 370.7 MB to disk (2 times so far)
+22/06/26 11:49:00 INFO io.HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 11:49:00 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+22/06/26 11:49:00 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+22/06/26 11:49:03 INFO output.FileOutputCommitter: Saved output of task 'attempt_20220626114303_0007_m_000009_0' to hdfs://localhost:9000/user/ubuntu/spark_output/_temporary/0/task_20220626114303_0007_m_000009
+22/06/26 11:49:03 INFO mapred.SparkHadoopMapRedUtil: attempt_20220626114303_0007_m_000009_0: Committed
+22/06/26 11:49:03 INFO executor.Executor: Finished task 9.0 in stage 1.0 (TID 27). 1545 bytes result sent to driver
+22/06/26 11:49:03 INFO scheduler.TaskSetManager: Starting task 10.0 in stage 1.0 (TID 28, localhost, executor driver, partition 10, ANY, 7662 bytes)
+22/06/26 11:49:03 INFO executor.Executor: Running task 10.0 in stage 1.0 (TID 28)
+22/06/26 11:49:03 INFO scheduler.TaskSetManager: Finished task 9.0 in stage 1.0 (TID 27) in 12496 ms on localhost (executor driver) (10/18)
+22/06/26 11:49:03 INFO storage.ShuffleBlockFetcherIterator: Getting 18 non-empty blocks including 18 local blocks and 0 remote blocks
+22/06/26 11:49:03 INFO storage.ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 11:49:27 INFO io.HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 11:49:27 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+22/06/26 11:49:27 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+22/06/26 11:49:27 INFO output.FileOutputCommitter: Saved output of task 'attempt_20220626114303_0007_m_000010_0' to hdfs://localhost:9000/user/ubuntu/spark_output/_temporary/0/task_20220626114303_0007_m_000010
+22/06/26 11:49:27 INFO mapred.SparkHadoopMapRedUtil: attempt_20220626114303_0007_m_000010_0: Committed
+22/06/26 11:49:27 INFO executor.Executor: Finished task 10.0 in stage 1.0 (TID 28). 1502 bytes result sent to driver
+22/06/26 11:49:27 INFO scheduler.TaskSetManager: Starting task 11.0 in stage 1.0 (TID 29, localhost, executor driver, partition 11, ANY, 7662 bytes)
+22/06/26 11:49:27 INFO scheduler.TaskSetManager: Finished task 10.0 in stage 1.0 (TID 28) in 24901 ms on localhost (executor driver) (11/18)
+22/06/26 11:49:27 INFO executor.Executor: Running task 11.0 in stage 1.0 (TID 29)
+22/06/26 11:49:27 INFO storage.ShuffleBlockFetcherIterator: Getting 18 non-empty blocks including 18 local blocks and 0 remote blocks
+22/06/26 11:49:27 INFO storage.ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 11:49:36 INFO io.HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 11:49:36 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+22/06/26 11:49:36 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+22/06/26 11:49:36 INFO output.FileOutputCommitter: Saved output of task 'attempt_20220626114303_0007_m_000011_0' to hdfs://localhost:9000/user/ubuntu/spark_output/_temporary/0/task_20220626114303_0007_m_000011
+22/06/26 11:49:36 INFO mapred.SparkHadoopMapRedUtil: attempt_20220626114303_0007_m_000011_0: Committed
+22/06/26 11:49:36 INFO executor.Executor: Finished task 11.0 in stage 1.0 (TID 29). 1502 bytes result sent to driver
+22/06/26 11:49:36 INFO scheduler.TaskSetManager: Starting task 12.0 in stage 1.0 (TID 30, localhost, executor driver, partition 12, ANY, 7662 bytes)
+22/06/26 11:49:36 INFO executor.Executor: Running task 12.0 in stage 1.0 (TID 30)
+22/06/26 11:49:36 INFO scheduler.TaskSetManager: Finished task 11.0 in stage 1.0 (TID 29) in 9051 ms on localhost (executor driver) (12/18)
+22/06/26 11:49:37 INFO storage.ShuffleBlockFetcherIterator: Getting 17 non-empty blocks including 17 local blocks and 0 remote blocks
+22/06/26 11:49:37 INFO storage.ShuffleBlockFetcherIterator: Started 0 remote fetches in 9 ms
+22/06/26 11:49:58 INFO io.HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 11:49:58 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+22/06/26 11:49:58 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+22/06/26 11:49:59 INFO output.FileOutputCommitter: Saved output of task 'attempt_20220626114303_0007_m_000012_0' to hdfs://localhost:9000/user/ubuntu/spark_output/_temporary/0/task_20220626114303_0007_m_000012
+22/06/26 11:49:59 INFO mapred.SparkHadoopMapRedUtil: attempt_20220626114303_0007_m_000012_0: Committed
+22/06/26 11:49:59 INFO executor.Executor: Finished task 12.0 in stage 1.0 (TID 30). 1502 bytes result sent to driver
+22/06/26 11:49:59 INFO scheduler.TaskSetManager: Starting task 13.0 in stage 1.0 (TID 31, localhost, executor driver, partition 13, ANY, 7662 bytes)
+22/06/26 11:49:59 INFO scheduler.TaskSetManager: Finished task 12.0 in stage 1.0 (TID 30) in 22179 ms on localhost (executor driver) (13/18)
+22/06/26 11:49:59 INFO executor.Executor: Running task 13.0 in stage 1.0 (TID 31)
+22/06/26 11:49:59 INFO storage.ShuffleBlockFetcherIterator: Getting 17 non-empty blocks including 17 local blocks and 0 remote blocks
+22/06/26 11:49:59 INFO storage.ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+22/06/26 11:50:17 INFO io.HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 11:50:17 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+22/06/26 11:50:17 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+22/06/26 11:50:17 INFO output.FileOutputCommitter: Saved output of task 'attempt_20220626114303_0007_m_000013_0' to hdfs://localhost:9000/user/ubuntu/spark_output/_temporary/0/task_20220626114303_0007_m_000013
+22/06/26 11:50:17 INFO mapred.SparkHadoopMapRedUtil: attempt_20220626114303_0007_m_000013_0: Committed
+22/06/26 11:50:17 INFO executor.Executor: Finished task 13.0 in stage 1.0 (TID 31). 1502 bytes result sent to driver
+22/06/26 11:50:17 INFO scheduler.TaskSetManager: Starting task 14.0 in stage 1.0 (TID 32, localhost, executor driver, partition 14, ANY, 7662 bytes)
+22/06/26 11:50:17 INFO executor.Executor: Running task 14.0 in stage 1.0 (TID 32)
+22/06/26 11:50:17 INFO scheduler.TaskSetManager: Finished task 13.0 in stage 1.0 (TID 31) in 18755 ms on localhost (executor driver) (14/18)
+22/06/26 11:50:17 INFO storage.ShuffleBlockFetcherIterator: Getting 17 non-empty blocks including 17 local blocks and 0 remote blocks
+22/06/26 11:50:17 INFO storage.ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 11:50:34 INFO collection.ExternalAppendOnlyMap: Thread 52 spilling in-memory map of 370.9 MB to disk (1 time so far)
+22/06/26 11:50:40 INFO io.HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 11:50:40 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+22/06/26 11:50:40 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+22/06/26 11:50:49 INFO output.FileOutputCommitter: Saved output of task 'attempt_20220626114303_0007_m_000014_0' to hdfs://localhost:9000/user/ubuntu/spark_output/_temporary/0/task_20220626114303_0007_m_000014
+22/06/26 11:50:49 INFO mapred.SparkHadoopMapRedUtil: attempt_20220626114303_0007_m_000014_0: Committed
+22/06/26 11:50:49 INFO executor.Executor: Finished task 14.0 in stage 1.0 (TID 32). 1502 bytes result sent to driver
+22/06/26 11:50:49 INFO scheduler.TaskSetManager: Starting task 15.0 in stage 1.0 (TID 33, localhost, executor driver, partition 15, ANY, 7662 bytes)
+22/06/26 11:50:49 INFO scheduler.TaskSetManager: Finished task 14.0 in stage 1.0 (TID 32) in 31316 ms on localhost (executor driver) (15/18)
+22/06/26 11:50:49 INFO executor.Executor: Running task 15.0 in stage 1.0 (TID 33)
+22/06/26 11:50:49 INFO storage.ShuffleBlockFetcherIterator: Getting 18 non-empty blocks including 18 local blocks and 0 remote blocks
+22/06/26 11:50:49 INFO storage.ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+22/06/26 11:50:58 INFO io.HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 11:50:58 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+22/06/26 11:50:58 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+22/06/26 11:50:58 INFO output.FileOutputCommitter: Saved output of task 'attempt_20220626114303_0007_m_000015_0' to hdfs://localhost:9000/user/ubuntu/spark_output/_temporary/0/task_20220626114303_0007_m_000015
+22/06/26 11:50:58 INFO mapred.SparkHadoopMapRedUtil: attempt_20220626114303_0007_m_000015_0: Committed
+22/06/26 11:50:58 INFO executor.Executor: Finished task 15.0 in stage 1.0 (TID 33). 1502 bytes result sent to driver
+22/06/26 11:50:58 INFO scheduler.TaskSetManager: Starting task 16.0 in stage 1.0 (TID 34, localhost, executor driver, partition 16, ANY, 7662 bytes)
+22/06/26 11:50:58 INFO scheduler.TaskSetManager: Finished task 15.0 in stage 1.0 (TID 33) in 9596 ms on localhost (executor driver) (16/18)
+22/06/26 11:50:58 INFO executor.Executor: Running task 16.0 in stage 1.0 (TID 34)
+22/06/26 11:50:58 INFO storage.ShuffleBlockFetcherIterator: Getting 18 non-empty blocks including 18 local blocks and 0 remote blocks
+22/06/26 11:50:58 INFO storage.ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+22/06/26 11:51:10 INFO io.HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 11:51:10 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+22/06/26 11:51:10 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+22/06/26 11:51:11 INFO output.FileOutputCommitter: Saved output of task 'attempt_20220626114303_0007_m_000016_0' to hdfs://localhost:9000/user/ubuntu/spark_output/_temporary/0/task_20220626114303_0007_m_000016
+22/06/26 11:51:11 INFO mapred.SparkHadoopMapRedUtil: attempt_20220626114303_0007_m_000016_0: Committed
+22/06/26 11:51:11 INFO executor.Executor: Finished task 16.0 in stage 1.0 (TID 34). 1502 bytes result sent to driver
+22/06/26 11:51:11 INFO scheduler.TaskSetManager: Starting task 17.0 in stage 1.0 (TID 35, localhost, executor driver, partition 17, ANY, 7662 bytes)
+22/06/26 11:51:11 INFO scheduler.TaskSetManager: Finished task 16.0 in stage 1.0 (TID 34) in 12494 ms on localhost (executor driver) (17/18)
+22/06/26 11:51:11 INFO executor.Executor: Running task 17.0 in stage 1.0 (TID 35)
+22/06/26 11:51:11 INFO storage.ShuffleBlockFetcherIterator: Getting 18 non-empty blocks including 18 local blocks and 0 remote blocks
+22/06/26 11:51:11 INFO storage.ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+22/06/26 11:51:19 INFO io.HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+22/06/26 11:51:19 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 1
+22/06/26 11:51:19 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+22/06/26 11:51:19 INFO output.FileOutputCommitter: Saved output of task 'attempt_20220626114303_0007_m_000017_0' to hdfs://localhost:9000/user/ubuntu/spark_output/_temporary/0/task_20220626114303_0007_m_000017
+22/06/26 11:51:19 INFO mapred.SparkHadoopMapRedUtil: attempt_20220626114303_0007_m_000017_0: Committed
+22/06/26 11:51:19 INFO executor.Executor: Finished task 17.0 in stage 1.0 (TID 35). 1502 bytes result sent to driver
+22/06/26 11:51:19 INFO scheduler.TaskSetManager: Finished task 17.0 in stage 1.0 (TID 35) in 8385 ms on localhost (executor driver) (18/18)
+22/06/26 11:51:19 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+22/06/26 11:51:19 INFO scheduler.DAGScheduler: ResultStage 1 (runJob at SparkHadoopWriter.scala:78) finished in 278.409 s
+22/06/26 11:51:19 INFO scheduler.DAGScheduler: Job 0 finished: runJob at SparkHadoopWriter.scala:78, took 495.655153 s
+22/06/26 11:51:19 INFO io.SparkHadoopWriter: Job job_20220626114303_0007 committed.
+22/06/26 11:51:19 INFO server.AbstractConnector: Stopped Spark@680cd07e{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+22/06/26 11:51:19 INFO ui.SparkUI: Stopped Spark web UI at http://10.24.13.2:4040
+22/06/26 11:51:19 INFO spark.MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+22/06/26 11:51:19 INFO memory.MemoryStore: MemoryStore cleared
+22/06/26 11:51:19 INFO storage.BlockManager: BlockManager stopped
+22/06/26 11:51:19 INFO storage.BlockManagerMaster: BlockManagerMaster stopped
+22/06/26 11:51:19 INFO scheduler.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+22/06/26 11:51:19 INFO spark.SparkContext: Successfully stopped SparkContext
+22/06/26 11:51:19 INFO util.ShutdownHookManager: Shutdown hook called
+22/06/26 11:51:19 INFO util.ShutdownHookManager: Deleting directory /tmp/spark-e4d6f233-e875-4687-bd2c-80891cec89b8
+22/06/26 11:51:19 INFO util.ShutdownHookManager: Deleting directory /tmp/spark-f99764a2-ce54-4231-9bf7-43cda3ec1be6
